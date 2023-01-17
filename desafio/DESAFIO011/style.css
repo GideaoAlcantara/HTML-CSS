@@ -1,0 +1,19 @@
+@charset "UTF-8";
+
+#principal{
+      background-color: black;
+     height:8em
+}
+
+.titulo{
+     text-align: center;
+     color: white;
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     font-size: 1.8em;
+     font-weight: lighter;
+}
+
+hr{
+    color: rgb(0, 0, 0);
+}
+

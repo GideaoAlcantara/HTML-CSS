@@ -1,0 +1,38 @@
+@charset "UFT-8";
+
+h1{font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+h2{
+    color: cadetblue;
+}
+
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+h1#principal{
+    font: bolder 2em arial;
+    background-color: burlywood;
+    text-align: center;
+   
+}
+
+body{
+    background-color: beige;
+}
+
+.basico{
+    color: rgb(145, 242, 0);
+    text-align: justify;
+    font-size: 32px;
+}
+
+.medio{
+    color: rgb(221, 255, 0);
+}
+
+.avançado{
+    color: rgb(246, 14, 14);
+}

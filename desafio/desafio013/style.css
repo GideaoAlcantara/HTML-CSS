@@ -1,0 +1,59 @@
+@charset "UTF-8";
+
+header{
+    background-image: linear-gradient(to right, #240046 ,#7B2CBF);
+    padding: 10px;
+    margin: 10px;
+}
+
+#principal{
+    color: white;
+    font: bold 6em arial;
+    text-align: center;
+    text-shadow: 1px 1px rgba(247, 210, 0, 0.419);
+  
+}
+
+.menu{
+    text-align: center;
+    
+    
+}
+a{
+    color: aliceblue;
+    text-decoration: none;
+   
+}
+
+
+
+.Q1{
+   width: 50em;
+   height: 30em;
+   background-color: rgb(250, 213, 255);
+   padding: 10px;
+   margin: 10px;
+}
+
+footer{
+    background-color: #7B2CBF;
+    padding: 16px;
+    margin: 16px;
+    height: 50px;
+    width: 1400;
+    
+}
+
+main{
+    background-color: rgb(135, 169, 169);
+    width: 1700;
+}
+
+.Q2{
+    width: 50em;
+    height: 30em;
+    background-color: rgb(241, 255, 164);
+    padding: 10px;
+    margin: 10px;
+
+}

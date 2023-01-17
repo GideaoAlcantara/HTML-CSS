@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+         body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(166, 163, 163);
+            margin: 0px;
+           
+         }
+         header{
+            background-color: rgb(0, 0, 0);
+            padding: 10px;
+            margin: 10px;
+            text-align: center;
+            color: aliceblue;
+            box-shadow: 1px 1px 1px rgba(255, 0, 0, 0.242);
+            border-radius: 20px;
+            
+         }
+         main{
+            background-color: antiquewhite;
+           
+            text-align: justify;
+
+            padding: 0px 10px 600px 10px ;
+
+            border-radius: 0px 0px 50px 50px;
+
+            text-align: justify;
+
+            margin: auto;
+         }
+         nav{
+            background-color: rgb(211, 221, 218);
+            padding: 3px;
+         }
+         nav > a {
+            text-decoration: none;
+            color: black;
+            font-weight: bold;
+            margin-right: 30px;
+         }
+         nav >  a:hover {
+              text-decoration: underline;
+         }
+         article{
+            background-color: darkkhaki;
+
+         }
+         article > aside{
+            background-color: rgb(221, 128, 128);
+            
+            
+           
+         }
+         footer{
+            background-color: rgb(0, 0, 0);
+            color: rgb(255, 255, 255);
+            text-align: center;
+            padding: 0px;
+           
+           
+         }
+
+        #noticias >  article > aside > #az {
+            background-color: gold;
+        }
+        hr{
+            color: aliceblue;
+        }
+        #noticias >  article > aside > p {
+            text-align: justify;
+        }
+
+        footer > p {
+            margin: 0px;
+            height: 60px;
+            margin-top: 10px;
+        }
+
+        
+
+       
+
+        
+       
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu Site</h1>
+        <hr>
+        <nav>
+            <a href="#">site 1</a>
+            <a href="#">site 2</a>
+            <a href="#">site 3</a>
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+             <h1>Noticias,Esportes e Tecnologia</h1>
+        </section>
+        <section id="noticias">
+            <article>
+                <aside>
+                    <h2>assunto top</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa et dolore at perferendis mollitia eos voluptatibus amet, eveniet iste corporis suscipit earum blanditiis atque sapiente illum? Labore quas consequatur dolore.</p>
+                    <p id="az">artigo de jose</p>
+                </aside>
+            </article>
+            <article>
+
+            </article>
+
+            <h1 id="bordas">Teste de bordas</h1>
+
+        </section>
+    </main>
+    <footer>
+        <p>desenvolvido por Gtec</p>
+    </footer>
+
+    <div id="bola"></div>
+</body>
+</html>

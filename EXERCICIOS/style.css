@@ -1,0 +1,46 @@
+@charset "UTF-8";
+
+   body{
+     background-color: #EAE2B7;
+   }
+
+   h1{
+    color: #002C42;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 100px;
+    background-color: #FCBF49;
+   }
+
+   h2{
+    font-family: sans-serif;
+    font-weight: bold;
+   font-variant: small-caps;
+   }
+
+   h3{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #003049;
+   }
+
+   p{
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 2em;
+    text-align: justify;
+   }
+
+   ol{
+    list-style-type: disc;
+    
+   }
+
+   audio{
+    background-color: #000000;
+    
+   }
+
+   video{
+       border: 10px solid red;
+       outline: 1em solid yellow;
+       margin-left: 100px;
+   }
+
