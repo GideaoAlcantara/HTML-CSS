@@ -1,13 +1,27 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+
 *{
     margin: 0px;
     padding: 0px;
 }
 
+
+:root{
+    --fonte1: Verdana, 'Geneva', Tahoma, sans-serif;
+    --fonte2: 'Passion One', 'cursive';
+    --fonte3: 'Sriracha', 'cursive'; 
+}
+
+
 html,body{
     background-color: darkgray;
     min-height: 100vh;
+    font-family: var(--fonte1);
 }
 
 header{
@@ -19,6 +33,8 @@ header{
 header>h1{
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--fonte2);
+    font-size: 10vw;
 }
 
 header>p{
@@ -45,16 +61,38 @@ a:hover, footer:hover {
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vw;
+ }
+
+ section>p{
+    padding-bottom: 2em;
  }
 
  section.imagem{
-    background-color: rgb(44, 41, 41);
+    background-color: rgba(29, 27, 27, 0.349);
     color: white;
- }
+    box-shadow: inset 6px 6px 13px 0px black;
+    background-attachment: fixed;
+}
+ 
 
  section.imagem>p{
-     background-color: rgba(0, 0, 0, 0.27);
-     width: 500px;
+     background-color: rgba(0, 0, 0, 0.514);
+     display: inline-block;
+     padding: 5px;
+     text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.355);
+ }
+
+ section#img01{
+    background-image: url("../imagens/background001.jpg");
+    background-position: right center ;
+    background-size: cover;
+ }
+
+ section#img02{
+    background-image: url("../imagens/background002.jpg");
+    background-size: cover;
  }
 
 footer{
