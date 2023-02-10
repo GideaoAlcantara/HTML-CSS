@@ -32,8 +32,15 @@
             color: rgb(65, 73, 232) ;
         }
 
+       
+
         .Femi{
             color: rgb(244, 76, 104);
+        }
+        td#butao{
+              color: blue;
+              background-color: rgb(210, 10, 10);
+              height: 40px;
         }
     </style>
 </head>
@@ -81,6 +88,34 @@
             <td>B</td>
             <td>Tarde</td>
         </tr>
+    </table>
+          
+    <br>
+
+    <table>
+       <tr id="principal">
+            <td>entrada</td><td>saida</td><td>lucro</td>
+       </tr>
+       <tr>
+            <td><input type="number" name="entrada" id="entrada"></td>
+            <td><input type="number" name="saida" id="saida"></td>
+            <td id="resposta">R$ 0</td>
+            <td id="butao"><input type="button" value="butão" onclick="somar()"></td>
+       </tr>
+       <script>
+                function somar(){
+                    var ent = window.document.querySelector('tr>td>input#entrada')
+                    var exit = window.document.querySelector('tr>td>input#saida')
+                    var resp = window.document.querySelector('td#resposta')
+
+                    var n1 = Number(ent.value)
+                    var n2 = Number(exit.value)
+                    var res = n1-n2
+
+                    resp.innerHTML=`R$ ${res}`
+                }
+       </script>
+       
     </table>
     
 </body>

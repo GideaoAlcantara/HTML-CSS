@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Grande</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+        table{
+            width: 500px;
+            border-collapse: collapse;
+            margin: auto;
+            border: 2px solid rgba(0, 0, 0, 0.234);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+        }
+        thead{
+            background-color: rgb(96, 92, 92);
+            color: aliceblue;
+        }
+        th,td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .cidade{
+            text-align: left;
+            font-weight: lighter;
+        }
+        .pop{
+            text-align: right;
+            font-weight: lighter;
+        }
+        tbody > tr:nth-child(2n){
+            background-color: rgba(95, 158, 160, 0.516);
+        }
+        tfoot{
+            background-color: rgb(79, 76, 76);
+            color: aliceblue;
+        }
+        caption{
+            text-align: center;
+            background-color: darkgray;
+            padding: 10px;
+            font-weight: bold;
+            border: 2px solid rgba(0, 0, 0, 0.234);
+            box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.125);
+            border-collapse: collapse;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Uso de Tabela Grande</h1>
+    <table>
+        <caption>Populações da Unidades Federativas</caption>
+          <thead>
+                  <tr>
+                      <th scope="col">Estado</th>
+                      <th scope="col">População</th>
+                  </tr>
+          </thead>
+          <tbody>
+                  <tr>
+                        <th class="cidade">São Paulo</th>
+                        <th class="pop">45 919 076</th>
+                  </tr>
+                  <tr>
+                    <th class="cidade">Minas Gerais</th>
+                    <th class="pop">21 160 789</th>
+                  </tr>
+                  <tr>
+                    <th class="cidade">Rio de Janeiro</th>
+                    <th class="pop">17 265 589</th>
+                  </tr>
+          </tbody>
+          <tfoot>
+                 <tr>
+                       <th scope="row">total de habitantes</th>
+                       <th scope="row">00000</th>
+                 </tr>
+          </tfoot>
+    </table>
+    
+</body>
+</html>
