@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio condicional</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="index.js">
+</head>
+<body>
+    <header>
+
+        <h1 id="tite">Titulo</h1>
+        <p>Tema do titulo para apresentar</p>
+
+    </header>
+    <main>
+        <section>
+              <h1>titulo</h1>
+
+              <h2>subtitulo</h2>
+
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatem odio at delectus voluptate laborum sint soluta, voluptatum voluptas veritatis eligendi earum quasi maxime illum itaque iusto et. Quam, esse reiciendis.</p>
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore quasi, beatae quibusdam modi ipsam illo quod debitis magni voluptatum, dicta alias sed, pariatur maxime temporibus nemo distinctio deserunt ducimus ipsa.</p>
+        </section>
+        <section>
+            <h1>tabela da condição</h1>
+            <table>
+                <tr>
+                    <td>nome</td>
+                </tr>
+                <tr>
+                    <td><input type="text" name="nome" id="nome"></td>
+                </tr>
+                <tr>
+                    <td>altura</td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="altura" id="altura"></td>
+                </tr>
+                <tr>
+                    <td>peso</td>
+                </tr>
+                <tr>
+                    <td><input type="number" name="peso" id="peso"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="clicar" onclick="clicar()"></td>
+                </tr>
+            </table>
+            <p id="resp">resposta</p>
+        </section>
+
+    </main>
+    <footer>
+                 <p>site</p>
+    </footer>
+
+    <script>
+        function clicar(){
+            var name = window.document.getElementById('nome')
+            var idad = window.document.querySelector('tr>td>input#altura')
+            var pesa = window.document.getElementsByName('peso')
+            var rep = window.document.getElementById('resp')
+
+            var altura = Number(idad.value)
+            var pezo = Number(pesa.value)
+            var imc = pezo/(altura*altura)
+
+            rep.innerHTML=`Olá ${name}, seu IMC é ${imc}`
+
+
+        }
+    </script>
+
+    
+    
+</body>
+</html>
