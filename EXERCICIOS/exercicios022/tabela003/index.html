@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mesclagem de Celula</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table{
+            border-collapse: collapse;
+            max-width: 900px;
+        }
+
+        td{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+           
+        }
+        #tito{
+            border: 1px solid black;
+            padding: 10px;
+            background-color: dimgray;
+            color: aliceblue;
+        }
+
+        #subtito{
+            background-color: darkgray;
+        }
+    </style>
+</head>
+<body>
+    <h1>Mesclagem de tabela</h1>
+    <table>
+        <tr>
+            <td>A</td>
+            <td colspan="2">B</td>
+            
+        </tr>
+        <tr>
+            <td>D</td>
+            <td>E</td>
+            <td rowspan="3">F</td>
+        </tr>
+        <tr>
+            
+            <td>H</td>
+            <td>I</td>
+        </tr>
+        <tr>
+            
+            <td>K</td>
+            <td>L</td>
+        </tr>
+    </table>
+       <BR></BR>
+    <table>
+        <tr>
+            <td>1</td>
+            <td>2</td>
+            <td rowspan="2">3</td>
+            <td>4</td>
+        </tr>
+         <tr>
+             <td>5</td>
+             <td>6</td>
+             <td>7</td>
+         </tr>
+         <tr>
+             <td colspan="3">8</td>
+             <td>9</td>
+         </tr>
+         <tr>
+             <td rowspan="2">10</td>
+             <td colspan="2">11</td>
+             <td>12</td>
+         </tr>
+         <tr>
+            <td>13</td>
+            <td>14</td>
+            <td>15</td>
+         </tr>
+    </table>
+    <br>
+
+    <table>
+        <tr>
+            <td colspan="4">A</td>
+            <td rowspan="4">B</td>
+        </tr>
+        <tr>
+            <td rowspan="4">C</td>
+            <td>D</td>
+            <td>E</td>
+            <td>F</td>
+        </tr>
+        <tr>
+             <td>G</td>
+             <td>H</td>
+             <td>I</td>
+        </tr>
+        <tr>
+            <td>J</td>
+            <td>L</td>
+            <td>M</td>
+       </tr>
+       <tr>
+           <td colspan="4">N</td>
+       </tr>
+    </table>
+    <br>
+
+    <table>
+        <caption id="tito"> Filmes Favoritos</caption>
+        <thead>
+            <tr id="subtito">
+                <td>Grupo</td>
+                <td>Nomes</td>
+                <td colspan="3">Filmes</td>
+            </tr>
+        </thead>
+       <tbody>
+        <tr>
+            <td rowspan="3">Mulheres</td>
+            <td>Ana maria Santos</td>
+            <td>Alien</td>
+            <td>Rambo</td>
+            <td>Vingadores</td>
+        </tr>
+        <tr>
+            <td>Beatriz Soua</td>
+            <td>Hulk</td>
+            <td>Inception</td>
+            <td>Batman</td>
+        </tr>
+        <tr>
+            <td>Claúdio Melo</td>
+            <td>Obvilion</td>
+            <td>Matrix</td>
+            <td>Big Hero</td>
+        </tr>
+        <tr>
+            <td rowspan="3">Homens</td>
+            <td>Bruno Mendonça</td>
+            <td>Intocaveis</td>
+            <td>Aminesia</td>
+            <td>Gladiador</td>
+        </tr>
+        <tr>
+            <td>Daniel Lorenço</td>
+            <td>Wall-E</td>
+            <td>Oldboy</td>
+            <td>Dangal</td>
+        </tr>
+        <tr>
+            <td>Fabiano Mota</td>
+            <td>Star Wars 5</td>
+            <td>Taxi Driver</td>
+            <td>Toy Story</td>
+        </tr>
+       </tbody>
+    </table>
+    
+</body>
+</html>
