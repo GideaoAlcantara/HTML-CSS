@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela 4</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+    <table>
+        <thead>  <!--cabeçalho principal-->
+             <tr>
+                 <th rowspan="2" class="coluna1" scope="row">Áreas</th>
+                 <th rowspan="2" scope="row">Disciplina</th>
+                 <th colspan="2" scope="rowgroup">Notas</th>
+                 <th rowspan="2" class="media2" scope="row">Média</th>
+             </tr>
+             <tr>
+                <th>Nota 1</th>
+                <th>Nota 2</th>
+             </tr>
+        </thead>
+        <tbody>  <!-- 1 tabela : exatas -->
+             <tr>
+                 <th rowspan="4" class="coluna1" scope="colgroup">Exatas</th>
+                 <th class="materia">Matématica</th>
+                 <th class="col2">0.0</th>
+                 <th class="col2">0.0</th>
+                 <th class="media2">0.0</th>
+             </tr>
+             <tr>
+                <th class="materia">Física</th>
+                <th class="col2">0.0</th>
+                <th class="col2">0.0</th>
+                <th class="media2">0.0</th>
+            </tr>
+            <tr>
+                <th class="materia">Quimica</th>
+                <th class="col2">0.0</th>
+                <th class="col2">0.0</th>
+                <th class="media2">0.0</th>
+            </tr>
+            <tr>
+                <th class="materia">Biologia</th>
+                <th class="col2">0.0</th>
+                <th class="col2">0.0</th>
+                <th class="media2">0.0</th>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="4" class="media" scope="col">Médias de Exatas</th>
+                <th class="media2">0.0</th>
+            </tr>
+        </tfoot>
+    </table>
+    <table id="tabela2"> <!-- 2 tabela : humanas -->
+        <tbody>
+            <tr>
+                <th rowspan="2" class="coluna1" scope="colgroup">Humanas</th>
+                <th class="materia">Historia</th>
+                <th class="col2">0.0</th>
+                <th class="col2">0.0</th>
+                <th class="media3">0.0</th>
+            </tr>
+            <tr>
+                <th class="materia">Geografia</th>
+                <th class="col2">0.0</th> 
+                <th class="col2">0.0</th>
+                <th class="media3">0.0</th>
+            </tr>
+         </tbody>
+         <tfoot>
+              <tr>
+                 <th colspan="4" class="media" scope="col">Médias de Humanas</th>
+                 <th class="media3">0.0</th>
+              </tr>
+         </tfoot>
+    </table>
+
+    
+</body>
+</html>

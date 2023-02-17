@@ -118,14 +118,14 @@
         <caption id="tito"> Filmes Favoritos</caption>
         <thead>
             <tr id="subtito">
-                <td>Grupo</td>
-                <td>Nomes</td>
-                <td colspan="3">Filmes</td>
+                <td scope="col">Grupo</td>
+                <td scope="col">Nomes</td>
+                <td colspan="3" scope="colgroup">Filmes</td>
             </tr>
         </thead>
        <tbody>
         <tr>
-            <td rowspan="3">Mulheres</td>
+            <td rowspan="3" style="font-weight: bold;" scope="rowgroup">Mulheres</td>
             <td>Ana maria Santos</td>
             <td>Alien</td>
             <td>Rambo</td>
@@ -144,7 +144,7 @@
             <td>Big Hero</td>
         </tr>
         <tr>
-            <td rowspan="3">Homens</td>
+            <td rowspan="3" style="font-weight: bold;" scope="rowgroup">Homens</td>
             <td>Bruno Mendonça</td>
             <td>Intocaveis</td>
             <td>Aminesia</td>
@@ -162,8 +162,13 @@
             <td>Taxi Driver</td>
             <td>Toy Story</td>
         </tr>
+        <tr>
+            <td colspan="4" style="font-weight: bold;" scopee="row">Total</td>
+            <td>1000</td>
+        </tr>
        </tbody>
     </table>
-    
+    <BR></BR>
+    <BR></BR>
 </body>
 </html>
