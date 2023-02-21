@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/*
+body, *{
+    border: 1px solid rgb(255, 72, 72); 
+}
+ section{
+    display:flex;
+    como vou tratar os conteudos dentro da caixa principal
+     justify-content: space-evenly;
+ }
+*/
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+:root{
+    --nav-bg-color:#121212;
+    --nav-text-color:white ;
+    --button-bg-color: #0052ce;
+    --buttom-text-color:white ;
+}
+
+body{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    /*alinha para ficar igual na linha*/
+    align-items: center;
+    background-color: var(--nav-bg-color);
+    color: var(--nav-text-color);
+    height: 6rem;/*6 rem = 60px*/
+    padding: 0rem 2.4rem;
+   
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+}
+   
