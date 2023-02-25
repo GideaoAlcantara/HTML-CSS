@@ -1,0 +1,63 @@
+@charset "UTF-8";
+
+body,ul,li,p{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    font-size: 1.3rem;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+h1{
+    text-align: center;
+    margin-top: 100px;
+}
+
+#header{
+    background-color: black;
+    display: flex;
+    /*flex-wrap:wrap
+      - significa que o item <NAV> vai pra baixo quando encostar no <A>;*/
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: center;
+}
+
+#menu{
+    display: flex;
+}
+
+#menu>li{
+    margin-left: 10px;
+}
+
+#menu>li>a{
+    display: block;
+    padding: 10px;
+}
+
+#flex{
+    display: flex;
+    /*pode quebrar*/
+    flex-wrap: wrap;
+    max-width: 800px;
+    margin: 0px auto;
+}
+
+#flex>div{
+    /* flex: expandi ,flax shuink(possa ficar menor), a base de 200px que se passar vai quebrar a linha.*/
+    flex: 1 1 200px;
+    margin: 10px;
+}
+
+img{
+    max-width: 100%;
+    display: block;
+  
+}

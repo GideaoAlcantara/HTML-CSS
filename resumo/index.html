@@ -14,12 +14,21 @@
     src: url('SAKURATA.ttf') format('truetype');
   }
 
+  body{
+    height: 1200px;
+    position: relative;
+  }
+
         :root{
           --google:'Gajraj One','cursive' ;
           --dowload:'baixado' ;
         }
         header{
             background-image: linear-gradient(to right,red,#fffffffb,blue);
+            position: sticky;
+            top: -1px;
+            
+
         }
         h1{
             font-family: var(--dowload);
@@ -27,6 +36,29 @@
         p{
             font-family: var(--google);
             line-height: 50px;
+        }
+        table{
+            border-collapse: collapse;
+           
+        }
+
+        tbody>tr:nth-child(2n-1){
+            background-color: aquamarine;
+        }
+
+        caption{
+            border: 1px solid black;
+            padding: 10px;
+            color: white;
+            background-color: darkgray;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1.5em;
+        }
+        th{
+            border: 1px solid black;
+            padding: 10px;
+            vertical-align: auto;
+            
         }
     </style>
 </head>
@@ -39,6 +71,64 @@
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus pariatur recusandae dolore tenetur consequatur culpa error, ullam similique unde, qui veniam harum asperiores maiores iusto. Ratione modi consectetur autem.</p>
     </main>
+     <table>
+          <caption>turnos</caption>
+          <thead>
+              <tr>
+                <th colspan="3">manha</th>
+                <th colspan="3">tarde</th>
+              </tr>
+          </thead>
+          <tbody>
+            <tr>
+                <th>classe 1</th>
+                <th>classe 2</th>
+                <th>classe 3</th>
+                <th>classe 4</th>
+                <th>classe 5</th>
+                <th>classe 6</th>
+            </tr>
+            <tr>
+                <th rowspan="2">classe 7</th>
+                <th>classe 8</th>
+                <th>classe 9</th>
+                <th rowspan="2">classe 7</th>
+                <th>classe 8</th>
+                <th>classe 9</th>
+            </tr>
+            <tr>
+                <th>classe 10</th>
+                <th>classe 11</th>
+                <th>classe 10</th>
+                <th>classe 11</th>
+            </tr>
+            <tr>
+                <th>classe 1</th>
+                <th>classe 2</th>
+                <th>classe 3</th>
+                <th>classe 4</th>
+                <th>classe 5</th>
+                <th>classe 6</th>
+            </tr>
+            <tr>
+                <th rowspan="2">classe 7</th>
+                <th>classe 8</th>
+                <th>classe 9</th>
+                <th rowspan="2">classe 7</th>
+                <th>classe 8</th>
+                <th>classe 9</th>
+            </tr>
+            <tr>
+                <th>classe 10</th>
+                <th>classe 11</th>
+                <th>classe 10</th>
+                <th>classe 11</th>
+
+          </tbody>
+          <tfoot>
+
+          </tfoot>
+     </table>
     
 </body>
 </html>
