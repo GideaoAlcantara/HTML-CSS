@@ -5,76 +5,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>revisando</title>
-    <style>
-        
-  @import url('https://fonts.googleapis.com/css2?family=Gajraj+One&display=swap');
+    <link rel="stylesheet" href="estilo/style.css">
 
-  @font-face {
-    font-family: 'baixado';
-    src: url('SAKURATA.ttf') format('truetype');
-  }
-
-  body{
-    height: 1200px;
-    position: relative;
-  }
-
-        :root{
-          --google:'Gajraj One','cursive' ;
-          --dowload:'baixado' ;
-        }
-        header{
-            background-image: linear-gradient(to right,red,#fffffffb,blue);
-            position: sticky;
-            top: -1px;
-            
-
-        }
-        h1{
-            font-family: var(--dowload);
-        }
-        p{
-            font-family: var(--google);
-            line-height: 50px;
-        }
-        table{
-            border-collapse: collapse;
-           
-        }
-
-        tbody>tr:nth-child(2n-1){
-            background-color: aquamarine;
-        }
-
-        caption{
-            border: 1px solid black;
-            padding: 10px;
-            color: white;
-            background-color: darkgray;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1.5em;
-        }
-        th{
-            border: 1px solid black;
-            padding: 10px;
-            vertical-align: auto;
-            
-        }
-    </style>
 </head>
 <body>
     <header>
-         <h1>Gtec</h1>
-    </header>
-    <main>
-        <h1>titulo</h1>
+        <a href="#">MENU</a>
 
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime minus pariatur recusandae dolore tenetur consequatur culpa error, ullam similique unde, qui veniam harum asperiores maiores iusto. Ratione modi consectetur autem.</p>
+      
+
+        <ol>
+            <li><a href="$">menu1</a></li>
+            <li><a href="$">menu2</a></li>
+            <li><a href="$">menu3</a></li>
+        </ol>
+    </header>
+
+    <h1>titulo</h1>
+
+    <main id="conteiner">
+      
+
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
+        <div>
+            <img src="img/psv 6.jpg" alt="">
+            <p>Goleiro - Cassio / PSV</p>
+        </div>
     </main>
      <table>
-          <caption>turnos</caption>
+          <caption onclick="cor()">turnos</caption>
           <thead>
-              <tr>
+              <tr id="gg">
                 <th colspan="3">manha</th>
                 <th colspan="3">tarde</th>
               </tr>
@@ -129,6 +109,6 @@
 
           </tfoot>
      </table>
-    
+     <script src="JS/teste.js"></script>
 </body>
 </html>
