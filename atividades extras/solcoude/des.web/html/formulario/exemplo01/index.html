@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <STYle>
+        BODY{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        form{
+            background-color: coral;
+            padding: 20px;
+        }
+        label{
+            background-color: aqua;
+        }
+
+        select{
+            background-color: cadetblue;
+        }
+
+        option{
+            background-color: cornflowerblue;
+        }
+
+        textarea{
+            background-color: darkolivegreen;
+        }
+
+        button{
+            background-color: blue;
+            color: aliceblue;
+        }
+        fieldset{
+            background-color: goldenrod;
+            padding: 10px;
+        }
+        legend{
+            background-color: chartreuse;
+        }
+    </STYle>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <h2>EXEMPLO 01</h2>
+
+    <form action="#">
+        <label for="selecao">selecione um carro</label>
+               <!--   FOR de label estar ligada com  ID de select  -->
+        <select name="carro" id="selecao">
+            <option value="">Ferrari</option>
+            <option value="">Fusca</option>
+            <option value="">Celta</option>
+            <option value="">Ford</option>
+        </select>
+    </form>
+
+    <!------------------------------------------------------------------>
+      
+    <h2>EXEMPLO 02</h2>
+    <form action="#">
+        <label for="text">Preencha abaixo :</label> <br>
+        <!--
+            cols = coluna
+            rows = lagura
+            NAME de textarea estar ligado com FOR de label
+        -->
+        <textarea name="text" id="text" cols="30" rows="10">
+             titulo...
+        </textarea>
+    </form>
+
+    <form action="#">
+        <button type="button">clique em mim</button>
+    </form>
+
+    <!------------------------------------------------------------------>
+
+    <h2>EXEMPLO 03</h2>
+
+    <form action="#">
+        <fieldset>
+            <legend>preencha</legend>
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <label for="nome">Sobrenome</label>
+            <input type="text" name="nome" id="nome">
+            <!--input submit envia-->
+            <input type="submit" value="enviar">
+        </fieldset>
+    </form>
+</body>
+</html>
