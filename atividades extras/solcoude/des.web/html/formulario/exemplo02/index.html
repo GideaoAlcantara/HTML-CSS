@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario exemplo2</title>
+    <style>
+        h1#titulo00{
+            font-size: 5rem;
+            text-align: center;
+        }
+
+        h2{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        form{
+            background-color: burlywood;
+            padding: 20px;
+        }
+
+        code{
+           line-height: 50px;
+           font-weight: bolder;
+           
+        }
+
+        div{
+            background-color: aliceblue;
+            border: 1px solid black;
+            padding: 10px;
+        }
+        section{
+            max-width: 700px;
+            margin: auto;
+        }
+
+        main{
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="titulo00">Formulario</h1>
+
+    <main>
+         <section>
+            <h2>INPUT:TEXT</h2>
+
+            <form action="">
+               <!-- caixa para add texto-->
+         
+              nome : <input type="text" name="" id="">
+         
+            </form>
+         
+            <div>
+             <code> 
+                 >form action=""< <br>
+                     <!-- caixa para add texto-->
+               
+                    nome : >input type="text" name="" id=""< <br>
+               
+                  >/form<
+                </code>
+            </div>
+         
+            <h2>INPUT:EMAIL</h2>
+         
+            <form action="">
+         
+           email : <input type="email" name="" id="">
+           <!--SUBMITE É ENVIAR-->
+           <input type="submit" value="enviar">
+         
+            </form>
+         
+           <div>
+             <code>
+                 >form action=""< <br>
+            
+                    email : >input type="email" name="" id=""< <br>
+                    <!--SUBMITE É ENVIAR-->
+                    >input type="submit" value="enviar"< <br>
+                  
+                    >/form<
+            
+               </code>
+           </div>
+         
+            <H2>INPUT:SENHA(password)</H2>
+         
+            <form action="">
+         
+           <input type="password" name="" id="">
+         
+            </form>
+         
+            <div>
+             <code>
+                 >form action=""< <br>
+         
+                 >input type="password" name="" id=""< <br>
+               
+                 >/form<
+            </code>
+            </div>
+         
+            <H2>INPUT:OPACAO DE ESCOLHA</H2>
+         
+            <!--o NAME ajuda a marca só uma bolinha ,por isso o nome tem que ser igual-->
+         
+             <form action="">
+                 <label for="masc">masculino</label>
+         
+                 <input type="radio" name="igual" id="masc" checked>
+             
+                 <label for="fem">Feminino</label>
+             
+                 <input type="radio" name="igual" id="fem">
+             </form>
+         
+             <div>
+                 <code>
+                     >form action=""<
+                         >label for="masc"< masculino >/label < <br>
+                 
+                         >input type="radio" name="igual" id="masc" checked< <br>
+                     
+                         >label for="fem"< Feminino >/label< <br>
+                     
+                         >input type="radio" name="igual" id="fem"< <br>
+                         >/form<
+                 </code>
+             </div>
+         
+            <h2>INPUT:CHECKBOX</h2>
+         
+            <form action="">
+               <input type="checkbox" name="carro" id="carro1">
+               <label for="carro1">carro 01</label>
+               <input type="checkbox" name="carro" id="carro2">
+               <label for="carro2">carro 02</label>
+               <input type="checkbox" name="carro" id="carro3">
+               <label for="carro3">carro 03</label>
+            </form>
+         
+             <div>
+                 <code>
+                     >form action=""< <br>
+                         > input type="checkbox" name="carro" id="carro1"< <br>
+                         > label for="carro1"< carro 01 >/label<  <br>
+                         > input type="checkbox" name="carro" id="carro2"< <br>
+                         > label for="carro2"< carro 02 >/label< <br>
+                         > input type="checkbox" name="carro" id="carro3"< <br>
+                         > label for="carro3"< carro 03 >/label< <br>
+                     >/form<
+                    </code>
+             </div>
+             
+         </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>neu site principal</h1>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magnam laboriosam minima doloribus maxime adipisci, iure possimus, eius omnis iusto numquam iste ducimus sequi. Debitis, ullam et dolorum sunt eos eligendi?</p>
+
+    <!--SANDBOX AJUDA A PROTEGER O IFRAME COM OS DADOS NÃO SER DESVIADO
+    
+    *SANDBOX
+         - sandbox = segurança no máximo ,bloqueado tudo.
+
+         - allow-same-origin = permite conteúdo de 
+          mesmo origem
+
+         - allow-form = permite formulario
+
+         - allow-script = permite script
+    -->
+
+    <!--REFERRERPOLICY 
+       1) PADRAO:
+
+              no-referrer-when-downgrade
+
+        2) MAIS LIMITADO:
+
+               no-referrer
+    -->
+
+    <iframe src="../index.html" frameborder="1" sandbox="sandbox " referrerpolicy="no-referrer-when-downgrade">
+        
+        [ERRO] , não é compativel !
+    </iframe>
+
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eaque, modi. Accusamus illo deserunt laborum provident consequuntur praesentium nesciunt illum quam facilis doloremque dolore vero quos obcaecati, unde dicta enim ducimus.</p>
+
+    <iframe src="ex3.html" frameborder="1" sandbox="allow-scripts " referrerpolicy="no-referrer-when-downgrade">
+        
+        [ERRO] , não é compativel !
+    </iframe>
+</body>
+</html>

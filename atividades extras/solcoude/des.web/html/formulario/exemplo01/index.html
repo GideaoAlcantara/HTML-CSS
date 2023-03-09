@@ -6,6 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
     <STYle>
+        h1#titulo00{
+            font-family:monospace;
+            font-weight: bold;
+            font-size: 5rem;
+        }
         BODY{
             font-family: Arial, Helvetica, sans-serif;
         }
@@ -43,10 +48,11 @@
     </STYle>
 </head>
 <body>
-    <h1>Formulario</h1>
-
+    <h1 id="titulo00">Formulario</h1>
+    <hr>
     <h2>EXEMPLO 01</h2>
-
+     <hr>
+     <br>
     <form action="#">
         <label for="selecao">selecione um carro</label>
                <!--   FOR de label estar ligada com  ID de select  -->
@@ -54,15 +60,18 @@
             <option value="">Ferrari</option>
             <option value="">Fusca</option>
             <option value="">Celta</option>
-            <option value="">Ford</option>
+            <option value=""><a href="https://soulcode.com/">Cold</a></option>
         </select>
     </form>
 
     <!------------------------------------------------------------------>
-      
+    <br>
+     <hr> 
     <h2>EXEMPLO 02</h2>
+    <hr>
+    <br>
     <form action="#">
-        <label for="text">Preencha abaixo :</label> <br>
+        <label for="text">Preencha abaixo :</label><br>
         <!--
             cols = coluna
             rows = lagura
@@ -78,9 +87,11 @@
     </form>
 
     <!------------------------------------------------------------------>
-
+    <br>
+     <hr>
     <h2>EXEMPLO 03</h2>
-
+     <hr>
+     <br>
     <form action="#">
         <fieldset>
             <legend>preencha</legend>
