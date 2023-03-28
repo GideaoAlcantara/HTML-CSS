@@ -1,0 +1,1 @@
+window.alert('se liga aí,Mané.')

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+          
+        }
+
+        form{
+            border: 1px solid black;
+            padding: 10px;
+           
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu 1 Formulario</h1>
+
+    <form action="../caixa de texto e senha/index.html" autocomplete="off" method="post">
+        <!--
+           * autocomplete = of ,funciona para deixar desligado o salvamento de palavras
+
+           * action = o prof usou nele um PHP
+
+           * method = get(padrão,link compatilhado,limite de 3 mil letras,vedados para uso de dados sensiveis) ou post(deixar oculto)
+        -->
+         <label for="inome">nome :</label>
+         <input type="text" name="nome" id="inome"> 
+
+         <label for="isobrenome">sobrenome :</label>
+         <input type="text" name="sobrenome" id="isobrenome">
+
+         <input type="submit" value="enviar">
+    </form>
+    
+</body>
+</html>

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parte 2</title>
+    <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
+    <style>
+        h1{
+            font-family: var(--baixado);
+        }
+        h2{
+            background-color: blueviolet;
+            font-family: var(--google);
+        }
+        table{
+          font-family: Arial, Helvetica, sans-serif;
+          border-collapse: collapse;
+        }
+        tr,th{
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        ul{
+            column-count: 5;
+           column-rule-style: groove;
+           column-rule-color: brown;
+           column-rule-width: 20px;
+           
+            
+        }
+
+        iframe#tela{
+            border: 2px solid black;
+            width: 400px;
+            height: 400px;
+            
+        }
+        p{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            font-style: italic;
+            font-display: unset;
+            line-height: 30px;
+            text-align: justify;
+            padding: 10px;
+        }
+        @font-face{
+            font-family: 'baixado';
+            src: url('fonte/SAKURATA.ttf') format('truetype');
+        }
+        
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+
+        :root{
+            --baixado:'baixado' ;
+            --google: 'Bebas Neue',cursive;
+        }
+    </style>
+</head>
+<body>
+   <h1>imagem  &#x1F480</h1>
+
+   <h2>arquivo img</h2>
+
+   <img class="img1" src="imagem/poster/images.jpg" alt="poster">
+
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates ullam explicabo dolorem fugit officia ipsum adipisci, quia veritatis esse distinctio expedita ex alias illum delectus recusandae, dolore, hic sequi odit. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti modi, perspiciatis cupiditate quod quibusdam, vel quia explicabo minus nobis similique harum? Officiis assumenda nihil nam laboriosam nesciunt, in blanditiis incidunt. Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam, unde sequi sit fugiat quibusdam pariatur, dolorum animi atque ducimus fuga autem. Labore doloremque voluptas nemo deserunt tenetur quasi commodi! Dolorem.</p>
+
+   <h2>arquivo url link</h2>
+
+   <img class="img1" src="https://th.bing.com/th/id/OIP.EOYmaUgi9jK2tgNX4BBylgAAAA?pid=ImgDet&rs=1" alt="carro2">
+
+   <h2>flexivel</h2>
+
+   <picture>
+        <source media="(max-width: 700px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+
+        <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
+
+       <img src="imagem/responsivo/imagempcg.jpg" alt="imagemg">
+   </picture>
+
+   <h2>tabela simples</h2>
+
+   <table>
+       <tr>
+        <th>nome</th>
+        <th>idade</th>
+        <th>peso</th>
+        <th>altura</th>
+       </tr>
+       <tr>
+        <th>maria</th>
+        <th>12</th>
+        <th>60kg</th>
+        <th>1.60cm</th>
+       </tr>
+       <tr>
+        <th>jose</th>
+        <th>12</th>
+        <th>60kg</th>
+        <th>1.60cm</th>
+       </tr>
+       <tr>
+        <th>maria</th>
+        <th>12</th>
+        <th>60kg</th>
+        <th>1.60cm</th>
+       </tr>
+       <tr>
+        <th>jose</th>
+        <th>12</th>
+        <th>60kg</th>
+        <th>1.60cm</th>
+       </tr>
+   </table>
+
+   <h2>colunas</h2>
+
+   <ul>
+    <li>cachorro</li>
+    <li>gato</li>
+    <li>rato</li>
+    <li>passaro</li>
+    <li>peixe</li>
+    <li>cachorro</li>
+    <li>gato</li>
+    <li>rato</li>
+    <li>passaro</li>
+    <li>peixe</li>
+    <li>cachorro</li>
+    <li>gato</li>
+    <li>rato</li>
+    <li>passaro</li>
+    <li>peixe</li>
+   </ul>
+
+   <h2>iframe</h2>
+
+   <iframe src="https://ge.globo.com/futebol/" frameborder="0" height="400px" width="400px">
+
+   </iframe>
+
+   <h3>navegando iframe</h3>
+
+   <ul>
+    <li><a href="index.html" target="frame">texto1</a></li>
+    <li><a href="index2.html" target="frame">texto2</a></li>
+    <li><a href="https://ge.globo.com/futebol/" target="frame">texto3</a></li>
+   </ul>
+
+   <iframe src="" frameborder="0" id="tela" name="frame">
+
+   </iframe>
+
+   <h3>iframe de mapa</h3>
+
+   <iframe src="https://www.google.com/maps/embed?pb=!1m26!1m12!1m3!1d63701.30391285225!2d-38.614610931677824!3d-3.737754103813148!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m11!3e0!4m5!1s0x7c74bd24b11f301%3A0xa908f8a795c4f04d!2sPadre%20Andrade%2C%20Fortaleza%20-%20CE!3m2!1d-3.7377548!2d-38.5795913!4m3!3m2!1d-3.7399809999999998!2d-38.5914366!5e0!3m2!1spt-BR!2sbr!4v1680031812666!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</body>
+</html>

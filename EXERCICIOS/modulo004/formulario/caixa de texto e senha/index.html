@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        form{
+            border: 1px solid black;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Formulario</h1>
+     <form action="teste.js" method="post" autocomplete="on">
+        <div>
+             <label for="usuario1">Usuario :</label>
+            <input type="text" name="usu" id="usuario1" required placeholder="nome do usuario" autocomplete="username">
+        </div> <br>
+        <div>
+            <label for="senha1">Senha :</label>
+            <input type="password" name="senha" id="senha1" required minlength="7" maxlength="10" size="22">
+        </div> <br>
+        <div>
+            <input type="submit" value="enviar">
+        <!--
+            reset = ele limpa
+
+            required = obrigatorio
+
+            minlenght = minimo de caracter
+
+            maxlenght = maximo de caractere que digita
+
+            size = tamanho da caixa
+
+            placeholder = dar dica
+
+            autocomplete = para salvar palavra ;
+              - on
+              - off
+              -newpassword -> nova senha
+              -current password -> senha atual
+        -->
+            <input type="reset" value="limpar">
+        </div>
+     </form>
+</body>
+</html>
