@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>teste 01</title>
+    <style>
+        div#exe01{
+            width: 100px;
+            height: 100px;
+            background-color: #e7e756;
+
+            /*
+            animation-name = chama a animação pelo nome
+            animation-duration = define o tempo de duração
+            @keyframe = define o nome da animação e o que ela fará.Nesse exemplo a cor de fundo da div partiu de uma cor(from) para outra cor (to)
+            */
+            animation-name: exemplo;
+            animation-duration: 3s;
+
+        }
+        @keyframes exemplo {
+            from {background-color: #e7e756;}
+            to { background-color: rgb(243, 59, 59);}
+        }
+        /*--------------------------------------------------------------------------------------------*/
+        div#exe02{
+            width: 100px;
+            height: 100px;
+            background-color: #e7e756;
+
+            /*
+             usando porcenttagem
+            */
+            animation-name: exemplo02;
+            animation-duration: 4s;
+
+        }
+        @keyframes exemplo02 {
+           0%{background-color: #e7e756;}
+           25%{ background-color: rgb(243, 59, 59);}
+           50%{background-color: chartreuse;}
+           75%{background-color: darkblue;}
+           100%{background-color: darkorchid;}
+        }
+
+          /*------------------------------------------------------------------------------------------*/
+          div#exe03{
+            width: 100px;
+            height: 100px;
+            background-color: #e7e756;
+            position: relative;
+            /*
+             movimentando caixa
+             pode também usar translate(x,y)para mover a div de um lugar
+             tambem é possivel alterar o tamanho da DIV usando scale(number)
+
+             animation-delay = define um atraso para um inicio de uma animação
+             animation-iteration-count= define os numeros de vezes que uma animação deve ser executada.
+             animation-direction= define a direção de uma animação (normal,reverse,alternate,alternate-reverse)
+             animation-timing-function = define curva de velociddade da animação (ease,linear,ease-in,ease-out,ease-in-out,cubic-bezier(n,n,n,n))
+            */
+            animation-name: exemplo03;
+            animation-duration: 4s;
+            animation-delay: 2s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-timing-function: ease-in-out;
+
+        }
+        @keyframes exemplo03 {
+           0%{background-color: #e7e756;
+                right:0px ;       
+                top:0px ;
+        }
+           25%{ background-color: rgb(243, 59, 59);
+                left: 20px;
+                top: 0px;
+        }
+           50%{background-color: chartreuse;
+                left:200px ;
+                top: 200px;
+        }
+           75%{background-color: darkblue;
+                left: 0px;
+                top: 200px;
+        }
+           100%{background-color: darkorchid;
+                left:0px ;
+                top: 0px;
+        }
+
+        }
+
+    </style>
+</head>
+<body>
+    <h1>1 exemplo de @keyframes</h1>
+
+    <div id="exe01"></div>
+
+    <h1>2 exemplo ,usando %</h1>
+
+    <div id="exe02"></div>
+
+    <h1>Movimentando a caixa</h1>
+
+    <div id="exe03"></div>
+</body>
+</html>
