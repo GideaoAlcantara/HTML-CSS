@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="../caixa de email e telefone/js.js" method="post">
+        
+        <p>
+            <h2>Select</h2>
+            <label for="iestado">Estado</label>
+            <select name="estado" id="iestado">
+                <option value="" selected>--escolha--</option>
+               <optgroup label="Região Sudeste">
+                <option value="RJ">Rio de Janeiro</option>
+                <option value="SP" >São Paulo</option>
+                <option value="MG">Minas Gerais</optio>
+               </optgroup>
+
+                <optgroup label="Região Nordeeste">
+                    <option value="PE">Pernanbuco</option>
+                    <option value="CE">Ceará</option>
+                </optgroup>
+
+            </select>
+        </p>
+
+        <p>
+            <label for="iprof">Profissões</label>
+            <input type="text" name="prof" id="prof" list="listprof">
+
+            <datalist id="listprof">
+                <option value="med">Médico</option>
+                <option value="adm">Administrador</option>
+                <option value="Vert">Verterinario</option>
+                <option value="prog">Progamador</option>
+            </datalist>
+        </p>
+
+        <p>
+            <label for="imsg">Mensagem :</label> <br>
+            <textarea name="msg" id="imsg" cols="30" rows="10">
+
+            </textarea>
+        </p>
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
+</body>
+</html>

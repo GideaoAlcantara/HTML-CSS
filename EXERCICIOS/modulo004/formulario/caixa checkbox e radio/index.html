@@ -4,9 +4,38 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Formulario checkbox e radio</title>
 </head>
 <body>
-    
+    <form action="../caixa de email e telefone/js.js" method="get">
+        <fieldset>
+             <legend>Sexo</legend>
+             <input type="radio" name="sexo" id="imasc" value="M">
+             <label for="imasc">Masculino</label>
+             <input type="radio" name="sexo" id="ifemi" checked value="F">
+             <!--
+                input:radio precisa ter o mesmo nome para selecionar a opção .
+                checked faz a opção já aparecer marcada por padrão
+             -->
+             <label for="ifemi">Feminino</label>
+        </fieldset>
+        <fieldset>
+              <legend>Esportes Favoritos</legend>
+              <input type="checkbox" name="esbas" id="iesbas">
+              <label for="iesbas">Basquete</label>  <br>
+              <input type="checkbox" name="esfut" id="iesfut"> 
+              <label for="iesfut">Futebol</label>  <br>
+              <input type="checkbox" name="esnat" id="iesnat">
+              <label for="iesnat">Natação</label> <br>
+              <input type="checkbox" name="esten" id="iesten">
+              <label for="iesten">Tenis</label>
+        </fieldset>
+
+
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+        </p>
+    </form>
 </body>
 </html>
