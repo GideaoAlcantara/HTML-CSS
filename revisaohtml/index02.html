@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Revisão terceira parte</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 0px;
+            margin: 0px;
+        }
+        img{
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+        header{
+            text-align: center;
+            background-color: #402da4;
+            padding: 30px 0px 30px 0px;
+            color: white;
+            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+        }
+        nav>ol{
+            list-style-type: none;
+            display: flex;
+            justify-content: flex-end;
+            background-color: #261968;
+            padding: 20px;
+        }
+        nav>ol>li>a{
+            margin-left: 20px;
+            color: #ff7f50;
+            text-decoration: none;
+            border: 1px solid #ff7f50;
+            border-radius: 10%;
+            padding: 10px;
+        }
+        nav>ol>li>a:hover{
+            
+            color: #261968;
+            
+            border: 1px solid #261968;
+            
+            background-color: #ff7f50;
+            -o-transition-duration: 1.8s;
+        }
+        ul{
+            list-style-position: inside;
+        }
+        main{
+            margin: auto; /*desnecessario*/
+        }
+        section{
+            background-color: #ded7ff;
+            padding: 10px;
+            max-width: 790px;
+            margin: auto;
+            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.318);
+        }
+        article{
+            background-color: #9D90E0 ;
+            padding: 10px;
+        }
+        section#imfundo{
+           margin-bottom: 00px;
+        }
+        aside{
+            max-width: 350px;
+            height: 350px;
+            margin: auto;
+            margin-bottom: 50px;
+            border: 1px solid black;
+            background-image: url('imagem/poster/images.jpg');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center center;
+            background-attachment: fixed;
+        }
+        footer{
+            text-align: center;
+            background-color: #1f1358;
+            padding: 20px 0px 20px 0px;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Revisamdo dia 03</h1>
+    </header>
+    <nav>
+        <ol>
+            <li><a href="#">MENU</a></li>
+            <li><a href="#">FOTO</a></li>
+            <li><a href="#">VIDEO</a></li>
+            <li><a href="#">CONTATO</a></li>
+        </ol>
+    </nav>
+    <main>
+        <section>
+              <h1>LINKS</h1>
+              <article>
+               <h3>01 - link simples</h3>
+                 <ul>
+                    <li><a href="https://www.youtube.com/" target="_blank" rel="external">youtube/canal</a></li>
+                    <li><a href="https://github.com/GideaoAlcantara" target="_self" rel="external">Github/GideaoAlcantara</a></li>
+                    <li><a href="http://emojipedia.org/" target="_top" rel="external">emojipedia/emoges</a></li>
+                 </ul>
+                 <h3>02 link interno</h3>
+                 <ul>
+                    <li><a href="index01.html" target="_blank" rel="next"><img src="https://th.bing.com/th/id/OIP.5g_bpoyZrvMEEWG2YBU3mAAAAA?pid=ImgDet&rs=1" alt="seta"></a></li>
+                 </ul>
+              </article>
+              <h1>DOWLOADS</h1>
+              <article>
+                   <h3>01 - dowloads simples</h3>
+
+                   <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="meu livro.pdf" type="application/pdf">livro.pdf</a>
+              </article>
+        </section>
+        <section id="imfundo">
+              <article>
+                   <aside>a</aside>
+                   <aside>a</aside>
+                   <aside>a</aside>
+              </article>
+        </section>
+        <footer>
+            <p>&copy;GideaoFrontEnd</p>
+        </footer>
+    </main>
+</body>
+</html>
