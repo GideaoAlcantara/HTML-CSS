@@ -36,8 +36,11 @@ menu ul{
     }
 
     article{
-        text-align: justify;
-        width: 600px;
+        max-width: 600px;
         display: block;
         margin: auto;
+        padding: 10px;
+    }
+    article>p{
+        text-align: justify;
     }

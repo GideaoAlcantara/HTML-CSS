@@ -6,228 +6,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão segunda parte</title>
     <style>
-        .citacomp{
-            color: rgb(37, 196, 37);
-            text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.586);
-        }
-        .citacomp:hover{
-            color: red;
-            font-size: 2rem;
-            background-color: burlywood;
-        }
-        #citasimples{
+        p{
             text-align: justify;
-            text-decoration: wavy line-through red ;
             text-transform: uppercase;
-            text-shadow: 1px 1px 1px red;
-            line-height: 30px;
+            text-shadow: 1px 1px 1px rgb(196, 10, 10);
             text-indent: 30px;
         }
-        ul{
-            border: 1px solid black;
-            max-width: 1000px;
-            padding: 10px;
-            list-style-type: none;
-            column-count: 2;
-            column-gap: 16px;
-            column-rule-style: dotted;
-            column-rule-color: blue;
-            column-rule-width: 16px;
-        }
         ol{
+            list-style-type: lower-roman;
             list-style-position: inside;
+            column-count: 2;
+            column-gap: 300px;
+            column-width: 10px;
+            column-rule-style: double;
+            column-rule-color: brown;
+            column-rule-width: 50px;
         }
-        dt{
-            background-color: rgb(163, 139, 20);
-            color: aliceblue;
-            padding: 3px;
+        header#menu{
+            background-image: linear-gradient(to right,green,blue);
+            padding: 0.1px;
         }
-        header{
-            background-color: greenyellow;
+        header>h1{
             text-align: center;
-           padding-top: 10px;
-           font-family: Arial, Helvetica, sans-serif;
+            color: whitesmoke;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
         }
-        header>nav>ol{
-            list-style-type: none;
+        nav>ul{
             display: flex;
-            background-color: rgb(103, 172, 0);
+            justify-content: flex-end;
+            list-style-type: none;
+        }
+        nav>ul>li{
+            margin-right: 50px;
             padding: 10px;
-            justify-content: end;
+            border: 1px solid white;
+            border-radius: 15%;
+            background-color: aliceblue;
         }
-        header>nav>ol>li{
-           margin-left: 10px;
-           border: 1px solid black;
-           border-radius: 10px;
-           padding: 5px;
+        nav>ul>li:hover{
+            border: 1px solid rgb(209, 255, 81);
+            background-color: rgb(120, 238, 94);
         }
-        header>nav>ol>li:hover{
-            color: green;
-           background-color: greenyellow;
-           border: 1px solid rgb(255, 91, 91);
+        nav>ul>li>a{
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
         }
     </style>
 </head>
 <body>
-    <header>
-           <h1>Gidtec</h1>
-           <nav>
-             <ol>
-                <li>menu</li>
-                <li>cursos</li>
-                <li>videos</li>
-                <li>perfil</li>
-             </ol>
-           </nav>
+    <header id="menu">
+          <h1>site de exeemplo</h1>
+
+          <nav>
+               <ul>
+                <li><a href="#">Menu</a></li>
+                <li><a href="#">video</a></li>
+                <li><a href="#">foto</a></li>
+                <li><a href="#">contato</a></li>
+               </ul>
+          </nav>
     </header>
-    <h1>semantica + lista não ordenada</h1>
-    <ul>
-        <li>
-            <dl>
-                <dt>nome de rua</dt>
-
-                <dd><address>rua são joaqino - 23 / padre andrade</address></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>negrito</dt>
-
-                <dd><strong>palavra</strong></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>italico</dt>
-
-                <dd><em>palavra</em></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>palavra pequeno</dt>
-
-                <dd><small>palavra</small></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>marca texto</dt>
-
-                <dd><mark>palavra</mark></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>palavra subindo</dt>
-
-                <dd>X <sup>2</sup></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>palavra descendo</dt>
-
-                <dd>X <sub>2</sub></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>codigo</dt>
-
-                <dd><code>arquivo de html</code></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>citação simples</dt>
-
-                <dd  id="citasimples"><q>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id sapiente aliquam totam! Aperiam placeat vel sit nam.</q></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>citação composta</dt>
-
-                <dd class="citacomp"><blockquote>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae id sapiente aliquam totam! Aperiam placeat vel sit nam.</blockquote></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>texto com referncia</dt>
-
-                <dd><abbr title="hiper text m. linguagem">html</abbr></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>sublinhado</dt>
-
-                <dd><ins>palavara sublinhado</ins></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>palavra taxado</dt>
-
-                <dd><del>palavra taxado</del></dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>texto invertido</dt>
-
-                <dd><bdo dir="cachorro">orrochac</bdo></dd>
-            </dl>
-        </li>
-    </ul>
-    <h1>listas ordenada</h1>
-    <ol>
-        <li>
-            <dl>
-                <dt>audio simples</dt>
-                <dd>
-                    <audio src="audio/Animal Squealing .mp3" controls ></audio>
-                </dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>audio composto</dt>
-                <dd>
-                    <audio controls preload="metadata" loop>
-                        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-
-                    </audio>
-                </dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>video simples</dt>
-                <dd>
-                    <video src="video/pexels-koolshooters-8976549.mp4" controls width="70%" poster="imagem/poster/images.jpg"></video>
-                </dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>video composto</dt>
-                <dd>
-                   <video width="70%" controls loop>
-                        <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-                   </video> 
-                </dd>
-            </dl>
-        </li>
-        <li>
-            <dl>
-                <dt>video copiado</dt>
-                <dd>
-                    <iframe width="70%"  src="https://www.youtube.com/embed/1oAfXIzSN8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </dd>
-            </dl>
-        </li>
-    </ol>
+   <h1>SEMANTICA HTML</h1>
+   <h2>lista não ordenada</h2>
+   <ul>
+    <li><address>Nome de rua</address> </li>
+    <li><strong>negrito</strong></li>
+    <li><em>italico</em></li>
+    <li><mark>marcador</mark></li>
+    <li><del>taxado</del></li>
+    <li><ins>sublinhado</ins></li>
+    <li>X <sup>2</sup></li>
+    <li>X<sub>2</sub></li>
+    <li><small>PEQUENO</small></li>
+    <LI><code>código</code></LI>
+    <li><q>citacaão simples : Lorem ipsum, dolor sit amet consectetur adipisicing elit.</q></li>
+    <li><blockquote>citacaão composta Lorem ipsum dolor sit, amet consectetur adipisicing elit. </blockquote></li>
+    <li><abbr title="hiperlinktext">HLT</abbr></li>
+    <li><bdo dir="cachorro">orrochac</bdo></li>
+   </ul>
+   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere praesentium, commodi aspernatur consequatur soluta quos qui, perferendis fuga, libero pariatur consequuntur! Voluptatum quas laboriosam aliquam nemo veniam porro nam.</p>
+   <h2>lista ordenada</h2>
+   <ol>
+    <li>primeiro texto</li>
+    <li>segundo texto</li>
+    <li>terceiro texto</li>
+    <li>quarto texto</li>
+   </ol>
+   <h1>AUDIO</h1>
+   <audio src="audio/Animal Squealing .mp3" controls preload="metadata"></audio>
+   <audio controls>
+        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+        <source src="#" type="">
+        <source src="#" type="">
+   </audio>
 </body>
 </html>
