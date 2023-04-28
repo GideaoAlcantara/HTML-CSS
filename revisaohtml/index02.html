@@ -7,129 +7,132 @@
     <title>Revisão terceira parte</title>
     <style>
         *{
-            font-family: Arial, Helvetica, sans-serif;
             padding: 0px;
             margin: 0px;
-        }
-        img{
-            border-radius: 50%;
-            border: 1px solid black;
+            font-family: Arial, Helvetica, sans-serif;
         }
         header{
+            background-image: linear-gradient(to right,green,yellow);
             text-align: center;
-            background-color: #402da4;
-            padding: 30px 0px 30px 0px;
-            color: white;
-            text-shadow: 1px 1px 1px rgb(0, 0, 0);
+            padding: 50px 0px 50px 0px;
+            font-size: 2rem;
         }
-        nav>ol{
+        nav>ul{
+            padding: 10px;
             list-style-type: none;
             display: flex;
-            justify-content: flex-end;
-            background-color: #261968;
+            justify-content: end;
+            background-image: linear-gradient(to right,rgb(8, 87, 8),rgb(122, 122, 11));
+        }
+        nav>ul>li{
+            margin-right: 15px;
+            padding: 10px;
+            border: 1px solid rgb(214, 49, 49);
+            border-radius: 10px;
+            transition-duration: 1.8ms;
+        }
+        nav>ul>li:hover{
+            background-color: darkred;
+            border: 1px solid rgb(209, 185, 0);
+            color: white;
+            
+        }
+        section>h1{
+            text-align: center;
+            padding: 20px 0px 40px 0px;
+        }
+
+       article{
             padding: 20px;
-        }
-        nav>ol>li>a{
-            margin-left: 20px;
-            color: #ff7f50;
-            text-decoration: none;
-            border: 1px solid #ff7f50;
-            border-radius: 10%;
-            padding: 10px;
-        }
-        nav>ol>li>a:hover{
-            
-            color: #261968;
-            
-            border: 1px solid #261968;
-            
-            background-color: #ff7f50;
-            -o-transition-duration: 1.8s;
-        }
-        ul{
-            list-style-position: inside;
-        }
-        main{
-            margin: auto; /*desnecessario*/
-        }
-        section{
-            background-color: #ded7ff;
-            padding: 10px;
-            max-width: 790px;
+            line-height: 50px;
+            background-color: rgb(182, 238, 144);
+            max-width: 700px;
+            max-height: max-content;
             margin: auto;
-            box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.318);
+            border-radius: 5px;
+            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
         }
-        article{
-            background-color: #9D90E0 ;
-            padding: 10px;
-        }
-        section#imfundo{
-           margin-bottom: 00px;
-        }
+
         aside{
-            max-width: 350px;
-            height: 350px;
             margin: auto;
-            margin-bottom: 50px;
-            border: 1px solid black;
-            background-image: url('imagem/poster/images.jpg');
-            background-repeat: no-repeat;
-            background-size: 100% 100%;
-            background-position: center center;
-            background-attachment: fixed;
+           max-width: 500px;
+           height: 700px;
+           border: 1px solid black;
+           background-image: url('imagem/poster/images.jpg');
+           background-repeat: no-repeat;
+          background-size:  100% 100%;
+          background-position: center center;
+         background-attachment: fixed;
+
         }
         footer{
             text-align: center;
-            background-color: #1f1358;
-            padding: 20px 0px 20px 0px;
+            background-image: linear-gradient(to right,green,yellow);
             color: white;
+            text-shadow: 1px 1px 1px black;
+            padding: 25px;
+
         }
     </style>
+   
 </head>
 <body>
-    <header>
-        <h1>Revisamdo dia 03</h1>
-    </header>
-    <nav>
-        <ol>
-            <li><a href="#">MENU</a></li>
-            <li><a href="#">FOTO</a></li>
-            <li><a href="#">VIDEO</a></li>
-            <li><a href="#">CONTATO</a></li>
-        </ol>
-    </nav>
-    <main>
-        <section>
-              <h1>LINKS</h1>
-              <article>
-               <h3>01 - link simples</h3>
-                 <ul>
-                    <li><a href="https://www.youtube.com/" target="_blank" rel="external">youtube/canal</a></li>
-                    <li><a href="https://github.com/GideaoAlcantara" target="_self" rel="external">Github/GideaoAlcantara</a></li>
-                    <li><a href="http://emojipedia.org/" target="_top" rel="external">emojipedia/emoges</a></li>
-                 </ul>
-                 <h3>02 link interno</h3>
-                 <ul>
-                    <li><a href="index01.html" target="_blank" rel="next"><img src="https://th.bing.com/th/id/OIP.5g_bpoyZrvMEEWG2YBU3mAAAAA?pid=ImgDet&rs=1" alt="seta"></a></li>
-                 </ul>
-              </article>
-              <h1>DOWLOADS</h1>
-              <article>
-                   <h3>01 - dowloads simples</h3>
+  <header>
+         <h1>TITULO INICIAL</h1>
+  </header>
+  <nav>
+     <ul>
+        <li>menu</li>
+        <li>foto</li>
+        <li>video</li>
+        <li>contato</li>
+     </ul>
+  </nav>
+  <main>
+    <section class="secao">
+         <h1>LNKS</h1>
 
-                   <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="meu livro.pdf" type="application/pdf">livro.pdf</a>
-              </article>
-        </section>
-        <section id="imfundo">
-              <article>
-                   <aside>a</aside>
-                   <aside>a</aside>
-                   <aside>a</aside>
-              </article>
-        </section>
-        <footer>
-            <p>&copy;GideaoFrontEnd</p>
-        </footer>
-    </main>
+         <article>
+            <h2>links simples</h2>
+            <a href="https://www.youtube.com/" target="_blank" rel="external">youtube link</a> <br>
+            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" rel="external">facebook link</a> <br>
+            <a href="https://www.instagram.com/" target="_self" rel="external">instagram link</a>
+
+            <h2>links internos</h2>
+
+            <p>
+                <a href="index01.html" target="_blank" rel="next"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcIvyi2EQiePN9IEqL5vFTuXlYpI7prsHng&usqp=CAU" alt="foto" width="20%" ></a>
+            </p>
+
+         </article>
+    </section>
+    <section class="secao">
+        <h1>dowloads</h1>
+        <article>
+            <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="meu livro.pdf" type="application/pdf">livro.pdf</a>
+        </article>
+
+    </section>
+     <section>
+             <h1>imagem palalax do fundo</h1>
+
+             <article>
+                       <aside>
+                            a
+                       </aside>
+                       <br>
+                       <aside>
+                            b
+                       </aside>
+                       <br>
+                       <aside>
+                            c
+                       </aside>
+             </article>
+     </section>
+  </main>
+  <footer>
+        <p>&copy;GideeaoTEC</p>
+  </footer>
 </body>
 </html>
