@@ -52,6 +52,11 @@
             border-radius: 5px;
             box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
         }
+         
+        fieldset{
+            padding: 5px;
+        }
+
 
         aside{
             margin: auto;
@@ -129,6 +134,92 @@
                             c
                        </aside>
              </article>
+     </section>
+     <section>
+          <h1>formularios</h1>
+
+       <article>
+           <h2>select</h2>
+
+           <form action="#" method="get">
+              <label for="selecao">selecionando carro: </label>
+
+              <select name="selecao" id="selecao">
+                  <option value="value">wolgvagner</option>
+                  <option value="value">Fiat</option>
+                  <option value="value">Ford</option>
+                  <option value="value">Mercedees</option>
+              </select>
+           </form>
+           <h2>textarea</h2>
+           <form action="#" method="get">
+              <label for="texta">add texto aqui : </label> <br>
+
+              <textarea name="texta" id="texta" cols="10" rows="10">
+
+              </textarea>
+           </form>
+           <h2>Fieldset</h2>
+           <form action="#" method="get">
+               <fieldset>
+                    <legend>dados pessoais</legend>
+                    <label for="nome">nome</label>
+                    <input type="text" name="nome" id="nome">
+                    <label for="cid">cidade</label>
+                    <input type="text" name="cid" id="cid">
+                    <label for="est">estado</label>
+                    <input type="text" name="est" id="est">
+               </fieldset>
+           </form>
+
+           <h2>formulario parte 2</h2>
+
+           <h3>input radio</h3>
+
+           <label for="sexoM">masculino</label>
+           <input type="radio" name="sex" id="sexoM">
+           <label for="sexoF">Feminino</label>
+           <input type="radio" name="sex" id="sexoF" checked>
+
+           <h3>input checkbox</h3>
+           <label for="bnn">banana</label>
+           <input type="checkbox" name="frut" id="bnn">
+           <label for="maca">maçã</label>
+           <input type="checkbox" name="frut" id="maca">
+
+           <h3>input color</h3>
+           <label for="cor">escolha a cor :</label>
+           <input type="color" name="cor" id="cor">
+
+           <h3>input Range</h3>
+             <label for="rang">escolha rang:</label>
+           <input type="range" name="rang" id="rang">
+
+           <h3>input files</h3>
+           <label for="fl">enviar arquivo :</label>
+           <input type="file" name="fl" id="fl">
+
+           <h3>input email</h3>
+           <label for="email">add email: </label>
+           <input type="email" name="ema" id="email"> <br>
+           <label for="senha">senha : </label>
+           <input type="password" name="ema" id="senha">
+
+            <h3>telefone</h3>
+             <label for="tel">telefone: </label>
+           <input type="tel" name="tele" id="tele">
+
+           <h3>Datalista</h3>
+           <label for="iprof">profissões: </label>
+           <input type="text" name="prof" id="iprof" list="listprof">
+           <datalist id="listprof">
+                <option value="med">médico</option>
+                <option value="adm">administrativo</option>
+                <option value="prg">progamador</option>
+                <option value="vert">verterinario</option>
+           </datalist>
+           
+       </article>
      </section>
   </main>
   <footer>
