@@ -6,10 +6,164 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revisão primeira parte</title>
     <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
+    <style>
+        @font-face {
+            font-family: 'baixado';
+            src: url('fonte/SAKURATA.ttf') format('truetype');
+        }
+
+        
+        @import url('https://fonts.googleapis.com/css2?family=Sigmar&display=swap');
+
+        *{
+            padding: 0px;
+            margin: 0px;
+        }
+
+        main{
+            padding: 15px;
+        }
+
+
+        :root{
+            --baixo:'baixado';
+            --google:'Sigmar', cursive;
+        }
+          section>p{
+              font-family: Arial, Helvetica, sans-serif;
+              font-size: 1.5rem;
+              font-weight: bolder;
+              font-style: italic;
+              font-variant: small-caps;
+              line-height: 50px;
+          }
+          header{
+            background-image: linear-gradient(to right,yellow,black);
+            color: white;
+            padding: 10px;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+          }
+          header>h1{
+            font-family: var(--baixo);
+          }
+          main>section>h2{
+            font-family: var(--google);
+            color: darkred;
+            font-size: 2rem;
+          }
+
+          footer{
+            background-image: linear-gradient(to right,yellow,black);
+            color: white;
+            padding: 5px;
+            text-shadow: 1px 1px 1px black;
+            text-align: center;
+          }
+    </style>
    
 </head>
 <body>
-   
+   <header>
+         <h1>REVISAO DO 1 DIA &#x1F480</h1>
+   </header>
+         <hr>
+   <main>
+          <section>
+               <h2>paragrafos e quebras</h2>
+
+               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus unde ad dignissimos eligendi totam distinctio error possimus maiores rem impedit voluptates placeat, deserunt sed veniam eos! Iure praesentium deserunt facilis!</p>
+
+               <h2>tag br</h2>
+
+               <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. <br>
+                  Facilis sed dolorem rerum? Maxime eos earum, minus, quae  <br>
+                  asperiores hic temporibus odio ex eaque ipsa nihil deserunt <br>
+                   accusantium molestias aperiam quos.</p>
+
+                <article>
+                      <h2 style="color: darkred; font-family: var(--google);">IMAGEM</h2>
+
+                      <aside>
+                           <h3>imagem simples</h3>
+                           <img src="imagem/poster/images.jpg" alt="foto" width="60%">
+
+                           <h3>imagem do google</h3>
+                           <img src="https://images.pexels.com/photos/301951/pexels-photo-301951.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260" alt="fotodainternet" width="300px" height="300px">
+
+                           <h3>imagem responsivo</h3>
+                           <picture>
+                            <source media="(max-width: 700px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+                            <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
+                            <img src="imagem/responsivo/imagempcg.jpg" alt="imagemresponsivo">
+                           </picture>
+                      </aside>
+
+                      <h2 style="color: darkred; font-family: var(--google);">IFRAME</h2>
+
+                      <aside>
+                          <h3>iframe simples</h3>
+                          <iframe src="index02.html" frameborder="1" width="300px" height="400px" scolling="no">
+
+                          </iframe>
+                      </aside>
+
+                      <aside>
+                          <h3>navegando iframe</h3>
+
+                          <ul>
+                            <li><a href="indexo1.html" target="frame">primeiro site</a></li>
+                            <li><a href="index01.html" target="frame">segundo site</a></li>
+                            <li><a href="index02.html" target="frame">terceiro site</a></li>
+                          </ul>
+
+                          <iframe src="" frameborder="1" name="frame" width="300px" height="300px">
+
+                          </iframe>
+                      </aside>
+                      <h2 style="color: darkred; font-family: var(--google);">FORMULARIO</h2>
+                      <aside>
+                         <h3>form:texto</h3>
+                         <form action="../desafio/desafio18/index.js" method="get">
+                               <p>
+                                   <label for="itext">add texto :</label>
+                                   <input type="text" name="text" id="itext" required minlength="3" maxlength="5">
+                               </p>
+                               <h3>form:numero</h3>
+                               <p>
+                                  <label for="inumb">add numero</label>
+                                  <input type="number" name="numb" id="inumb" min="3" max="5" step="1.5" required size="50px" placeholder="xxxxx">
+                               </p>
+                               <h3>form:mes</h3>
+                               <p>
+                                <label for="imes">add o mes:</label>
+                                <input type="month" name="mes" id="imes" placeholder="mes de ano">
+                               </p>
+                               <h3>form:dia</h3>
+                               <p>
+                                <label for="idate">add dia:</label>
+                                <input type="date" name="date" id="idate">
+                               </p>
+                               <h3>form:tempo</h3>
+                               <p>
+                                <label for="itempo">add tempo:</label>
+                                <input type="time" name="tempo" id="itempo">
+                               </p>
+                               <p style="border: 1px solid red;">
+                                <input type="submit" value="enviar">
+                                <input type="reset" value="limpar">
+                               </p>
+                         </form>
+                      </aside>
+
+                </article>
+          </section>
+          
+   </main>
+
+   <footer>
+       <p>&copy;GideaoTEC</p>
+   </footer>
 
 </body>
 </html>
