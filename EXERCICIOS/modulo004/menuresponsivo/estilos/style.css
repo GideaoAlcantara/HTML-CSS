@@ -1,0 +1,98 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0px;
+    margin: 0px;
+}
+
+body{
+    background-color: #0096C7;
+}
+
+header{
+    background-color: #023E8A;
+
+}
+
+header>h1{
+    text-align: center;
+    padding: 10px;
+    font-size: 3rem;
+   
+}
+
+menu{
+    display: none;
+}
+
+menu>ul{
+    list-style-type: none;
+}
+
+menu>ul>li>a{
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    color: aliceblue;
+    background-color: #02047f;
+    text-align: center;
+    border-top: 1px solid rgb(79, 73, 73);
+}
+
+menu>ul>li>a:hover{
+    background-color: #282972;
+}
+
+main{
+    max-width: 60vw;
+    background-color: white;
+    margin: auto;
+    margin-top: 10px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+article>h2{
+    padding-bottom: 20px;
+}
+
+article>p{
+    text-align: justify;
+    margin-bottom: 20px;
+    line-height: 30px;
+    text-indent: 30px;
+}
+
+/*esse em baixo é o css do icone do google do menu*/
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 48;
+  width: 99vw;
+  background-color: #02036a;
+ color: white;
+ text-align: center;
+ padding: 10px;
+}
+
+/*esse também é um css com hover*/
+.material-symbols-outlined:hover {
+    background-color: #ababca;
+   color: #02036a;
+   /* cursor:point add uma mãozinha no icone*/
+   cursor: pointer;
+   border-top-color: yellow;
+   border-style: solid;
+  
+  }
+
+footer{
+    text-align: center;
+    background-color: #023E8A;
+    padding: 20px;
+    color: white;
+   margin-top: 100px;
+}
