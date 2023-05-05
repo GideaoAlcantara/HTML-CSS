@@ -4,226 +4,66 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão terceira parte</title>
-    <style>
-        *{
-            padding: 0px;
-            margin: 0px;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        header{
-            background-image: linear-gradient(to right,green,yellow);
-            text-align: center;
-            padding: 50px 0px 50px 0px;
-            font-size: 2rem;
-        }
-        nav>ul{
-            padding: 10px;
-            list-style-type: none;
-            display: flex;
-            justify-content: end;
-            background-image: linear-gradient(to right,rgb(8, 87, 8),rgb(122, 122, 11));
-        }
-        nav>ul>li{
-            margin-right: 15px;
-            padding: 10px;
-            border: 1px solid rgb(214, 49, 49);
-            border-radius: 10px;
-            transition-duration: 1.8ms;
-        }
-        nav>ul>li:hover{
-            background-color: darkred;
-            border: 1px solid rgb(209, 185, 0);
-            color: white;
-            
-        }
-        section>h1{
-            text-align: center;
-            padding: 20px 0px 40px 0px;
-        }
-
-       article{
-            padding: 20px;
-            line-height: 50px;
-            background-color: rgb(182, 238, 144);
-            max-width: 700px;
-            max-height: max-content;
-            margin: auto;
-            border-radius: 5px;
-            box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.281);
-        }
-         
-        fieldset{
-            padding: 5px;
-        }
-
-
-        aside{
-            margin: auto;
-           max-width: 500px;
-           height: 700px;
-           border: 1px solid black;
-           background-image: url('imagem/poster/images.jpg');
-           background-repeat: no-repeat;
-          background-size:  100% 100%;
-          background-position: center center;
-         background-attachment: fixed;
-
-        }
-        footer{
-            text-align: center;
-            background-image: linear-gradient(to right,green,yellow);
-            color: white;
-            text-shadow: 1px 1px 1px black;
-            padding: 25px;
-
-        }
-    </style>
-   
+    <title>REVISÃO DIA 03</title>
+    <link rel="stylesheet" href="estilo/dia03.css">
 </head>
 <body>
-  <header>
-         <h1>TITULO INICIAL</h1>
-  </header>
-  <nav>
-     <ul>
-        <li>menu</li>
-        <li>foto</li>
-        <li>video</li>
-        <li>contato</li>
-     </ul>
-  </nav>
-  <main>
-    <section class="secao">
-         <h1>LNKS</h1>
+    <header>
+          <h1>SITE EXEMPLO</h1>
+                       <hr>
+          <menu>
+                <ul>
+                    <li>principal</li>
+                    <li>videos</li>
+                    <li>fotos</li>
+                    <li>contatos</li>
+                </ul>
+          </menu>
+    </header>
 
-         <article>
-            <h2>links simples</h2>
-            <a href="https://www.youtube.com/" target="_blank" rel="external">youtube link</a> <br>
-            <a href="https://pt-br.facebook.com/login/device-based/regular/login/" rel="external">facebook link</a> <br>
-            <a href="https://www.instagram.com/" target="_self" rel="external">instagram link</a>
+    <main>
+           <h1>LINKS</h1>
 
-            <h2>links internos</h2>
+           <section>
+                 <h2>externo</h2>
+                 <a href="https://www.youtube.com/" target="_blank" rel="external">link youtube</a>
+                 <h2>interno</h2>
+                 <a href="index01.html" target="_self" rel="next">link interno</a>
+                 <h2>link + imagem</h2>
+                 <a href="https://github.com/GideaoAlcantara" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="GitHub_Invertocat_Logo" width="100px"></a>
+           </section>
 
-            <p>
-                <a href="index01.html" target="_blank" rel="next"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcIvyi2EQiePN9IEqL5vFTuXlYpI7prsHng&usqp=CAU" alt="foto" width="20%" ></a>
-            </p>
+           <h1>DOWLOADS</h1>
 
-         </article>
-    </section>
-    <section class="secao">
-        <h1>dowloads</h1>
-        <article>
-            <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="meu livro.pdf" type="application/pdf">livro.pdf</a>
-        </article>
+           <section>
+                <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="livro.pdf" type="application/pdf" rel="internal">livro.pdf</a>
+           </section>
 
-    </section>
-     <section>
-             <h1>imagem palalax do fundo</h1>
+           <h1>EFEITO PALALAX</h1>
 
-             <article>
-                       <aside>
-                            a
-                       </aside>
-                       <br>
-                       <aside>
-                            b
-                       </aside>
-                       <br>
-                       <aside>
-                            c
-                       </aside>
-             </article>
-     </section>
-     <section>
-          <h1>formularios</h1>
+           <section>
+                <article>
+                     <aside class="palax">
+                             <div>
+                                <p style="color: crimson;">caixa centralizada</p>
+                             </div>
+                     </aside>
+                     <aside class="palax">
+                             <div>
+                                <p style="color: crimson;">caixa centralizada</p>
+                             </div>
+                     </aside>
+                     <aside class="palax">
+                             <div>
+                                <p style="color: crimson;">caixa centralizada</p>
+                             </div>                        
+                     </aside>
+                </article>
+           </section>
+    </main>
 
-       <article>
-           <h2>select</h2>
-
-           <form action="#" method="get">
-              <label for="selecao">selecionando carro: </label>
-
-              <select name="selecao" id="selecao">
-                  <option value="value">wolgvagner</option>
-                  <option value="value">Fiat</option>
-                  <option value="value">Ford</option>
-                  <option value="value">Mercedees</option>
-              </select>
-           </form>
-           <h2>textarea</h2>
-           <form action="#" method="get">
-              <label for="texta">add texto aqui : </label> <br>
-
-              <textarea name="texta" id="texta" cols="10" rows="10">
-
-              </textarea>
-           </form>
-           <h2>Fieldset</h2>
-           <form action="#" method="get">
-               <fieldset>
-                    <legend>dados pessoais</legend>
-                    <label for="nome">nome</label>
-                    <input type="text" name="nome" id="nome">
-                    <label for="cid">cidade</label>
-                    <input type="text" name="cid" id="cid">
-                    <label for="est">estado</label>
-                    <input type="text" name="est" id="est">
-               </fieldset>
-           </form>
-
-           <h2>formulario parte 2</h2>
-
-           <h3>input radio</h3>
-
-           <label for="sexoM">masculino</label>
-           <input type="radio" name="sex" id="sexoM">
-           <label for="sexoF">Feminino</label>
-           <input type="radio" name="sex" id="sexoF" checked>
-
-           <h3>input checkbox</h3>
-           <label for="bnn">banana</label>
-           <input type="checkbox" name="frut" id="bnn">
-           <label for="maca">maçã</label>
-           <input type="checkbox" name="frut" id="maca">
-
-           <h3>input color</h3>
-           <label for="cor">escolha a cor :</label>
-           <input type="color" name="cor" id="cor">
-
-           <h3>input Range</h3>
-             <label for="rang">escolha rang:</label>
-           <input type="range" name="rang" id="rang">
-
-           <h3>input files</h3>
-           <label for="fl">enviar arquivo :</label>
-           <input type="file" name="fl" id="fl">
-
-           <h3>input email</h3>
-           <label for="email">add email: </label>
-           <input type="email" name="ema" id="email"> <br>
-           <label for="senha">senha : </label>
-           <input type="password" name="ema" id="senha">
-
-            <h3>telefone</h3>
-             <label for="tel">telefone: </label>
-           <input type="tel" name="tele" id="tele">
-
-           <h3>Datalista</h3>
-           <label for="iprof">profissões: </label>
-           <input type="text" name="prof" id="iprof" list="listprof">
-           <datalist id="listprof">
-                <option value="med">médico</option>
-                <option value="adm">administrativo</option>
-                <option value="prg">progamador</option>
-                <option value="vert">verterinario</option>
-           </datalist>
-           
-       </article>
-     </section>
-  </main>
-  <footer>
-        <p>&copy;GideeaoTEC</p>
-  </footer>
+    <footer>
+         <p>&copy;GIDEAOTEC</p>
+    </footer>
 </body>
 </html>

@@ -1,0 +1,87 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header,footer{
+    background-image: linear-gradient(to right,rgb(244, 244, 90),rgb(111, 111, 235),rgb(241, 121, 121));
+}
+
+header>h1{
+    text-align: center;
+    padding: 30px;
+    font-size: 3rem;
+}
+
+header>menu{
+  
+}
+
+header>menu>ul{
+   list-style-type: none;
+   display: flex;
+   justify-content: flex-end;
+   padding: 8px;
+   
+}
+
+header>menu>ul>li{
+    margin-right: 20px;
+    padding: 8px;
+    border:1px solid black ;
+    border-radius: 5px;
+    
+}
+
+header>menu>ul>li:hover{
+   background-color: black;
+   color: gold;
+   transition-duration: 0.7s;
+}
+
+main>h1{
+   text-align: center;
+   padding: 20px;
+}
+
+section{
+    background-color: darkkhaki;
+    max-width: 700px;
+    padding: 10px;
+    margin: auto;
+    line-height: 60px;
+}
+
+aside.palax{
+    max-width: 700px;
+    height: 500px;
+    background-image: url('../imagem/poster/images.jpg');
+    background-size: 100% 100%;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin-bottom: 10px;
+    /*-----------------*/
+    position: relative;
+}
+
+aside.palax>div{
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.544);
+    margin: auto;
+    /*-----------------*/
+    position: absolute;
+    left: 50%;
+    top: 50%;
+
+    transform: translate(-50%,-50%);
+}
+
+footer{
+    text-align: center;
+    padding: 20px;
+}
