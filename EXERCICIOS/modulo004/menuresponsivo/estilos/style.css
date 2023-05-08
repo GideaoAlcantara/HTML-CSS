@@ -45,7 +45,7 @@ menu>ul>li>a:hover{
 }
 
 main{
-    max-width: 60vw;
+    max-width: 80vw;
     background-color: white;
     margin: auto;
     margin-top: 10px;
@@ -71,7 +71,7 @@ article>p{
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
-  width: 99vw;
+  width: 92vw;
   background-color: #02036a;
  color: white;
  text-align: center;
