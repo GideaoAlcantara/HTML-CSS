@@ -4,100 +4,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão segunda parte</title>
+    <title>REVISÃO DO DIA02</title>
     <style>
-        p{
-            text-align: justify;
-            text-transform: uppercase;
-            text-shadow: 1px 1px 1px rgb(196, 10, 10);
-            text-indent: 30px;
+        body{
+            position: relative;
         }
-        ol{
-            list-style-type: lower-roman;
-            list-style-position: inside;
-            column-count: 2;
-            column-gap: 300px;
-            column-width: 10px;
-            column-rule-style: double;
-            column-rule-color: brown;
-            column-rule-width: 50px;
-        }
-        header#menu{
-            background-image: linear-gradient(to right,green,blue);
-            padding: 0.1px;
+        header{
+            background-color: cadetblue;
+            color: aliceblue;
+            padding: 20px;
+            text-align: center;
+            position: sticky;
+            top: 0;
         }
         header>h1{
-            text-align: center;
-            color: whitesmoke;
-            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+          
         }
-        nav>ul{
-            display: flex;
-            justify-content: flex-end;
-            list-style-type: none;
-        }
-        nav>ul>li{
-            margin-right: 50px;
-            padding: 10px;
-            border: 1px solid white;
-            border-radius: 15%;
-            background-color: aliceblue;
-        }
-        nav>ul>li:hover{
-            border: 1px solid rgb(209, 255, 81);
-            background-color: rgb(120, 238, 94);
-        }
-        nav>ul>li>a{
-            text-decoration: none;
+        table#p1{
+            border-collapse: collapse;
             font-family: Arial, Helvetica, sans-serif;
+        }
+        table#p1 td{
+            border: 1px solid black;
+            padding: 10px;
+        }
+        table#p2 caption{
+              border: 1px solid black;
+        }
+        table#p2{
+            border-collapse: collapse;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table#p2 th{
+            border: 1px solid black;
+            padding: 10px;
+            font-weight: 100;
+        }
+        table#p2 thead th{
+            font-weight: 900;
+        }
+
+        table#p2 tbody  tr:nth-child(2n-1){
+             background-color: bisque;
         }
     </style>
 </head>
 <body>
-    <header id="menu">
-          <h1>site de exeemplo</h1>
-
-          <nav>
-               <ul>
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">video</a></li>
-                <li><a href="#">foto</a></li>
-                <li><a href="#">contato</a></li>
-               </ul>
-          </nav>
+    <header>
+           <h1>SITE EXEMPL2</h1>
     </header>
-   <h1>SEMANTICA HTML</h1>
-   <h2>lista não ordenada</h2>
-   <ul>
-    <li><address>Nome de rua</address> </li>
-    <li><strong>negrito</strong></li>
-    <li><em>italico</em></li>
-    <li><mark>marcador</mark></li>
-    <li><del>taxado</del></li>
-    <li><ins>sublinhado</ins></li>
-    <li>X <sup>2</sup></li>
-    <li>X<sub>2</sub></li>
-    <li><small>PEQUENO</small></li>
-    <LI><code>código</code></LI>
-    <li><q>citacaão simples : Lorem ipsum, dolor sit amet consectetur adipisicing elit.</q></li>
-    <li><blockquote>citacaão composta Lorem ipsum dolor sit, amet consectetur adipisicing elit. </blockquote></li>
-    <li><abbr title="hiperlinktext">HLT</abbr></li>
-    <li><bdo dir="cachorro">orrochac</bdo></li>
-   </ul>
-   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel facere praesentium, commodi aspernatur consequatur soluta quos qui, perferendis fuga, libero pariatur consequuntur! Voluptatum quas laboriosam aliquam nemo veniam porro nam.</p>
-   <h2>lista ordenada</h2>
-   <ol>
-    <li>primeiro texto</li>
-    <li>segundo texto</li>
-    <li>terceiro texto</li>
-    <li>quarto texto</li>
-   </ol>
-   <h1>AUDIO</h1>
-   <audio src="audio/Animal Squealing .mp3" controls preload="metadata"></audio>
-   <audio controls>
-        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-        <source src="#" type="">
-        <source src="#" type="">
-   </audio>
+
+    <main>
+         <h1>tabelas</h1>
+         <section>
+            <h2>tabela simples</h2>
+               <table id="p1">
+                     <tr>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                     </tr>
+                     <tr>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                     </tr>
+                     <tr>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                     </tr>
+                     <tr>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                        <td>palavras</td>
+                     </tr>
+               </table>
+               <h2>tabela grade</h2>
+               <table id="p2">
+                              <caption>filmes favoritos</caption>
+                    <thead>
+                           <tr>
+                               <th>grupos</th>
+                               <th>nomes</th>
+                               <th colspan="3" scope="colgroup">filmes</th>
+                           </tr>
+                    </thead>
+                    <tbody>
+                          <tr>
+                            <th rowspan="3" scope="rowgroup">feminino</th>
+                            <th>ana</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>  
+                          <tr>
+                            <th>julia</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>
+                          <tr>
+                            <th>fernanda</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>
+                          <tr>
+                            <th rowspan="3" scope="rowgroup">masculino</th>
+                            <th>joao</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>  
+                          <tr>
+                            <th>berto</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>
+                          <tr>
+                            <th>carllos</th>
+                            <th>shelk</th>
+                            <th>sperdman</th>
+                            <th>batman</th>
+                          </tr>
+                    </tbody>
+                    <tfoot>
+                          <tr>
+                            <th colspan="4">total</th>
+                            <th>100</th>
+                          </tr>
+                    </tfoot>
+               </table>
+         </section>
+    </main>
+
+    <footer>
+          <p>&copy;GIDEAOTEC</p>
+    </footer>
+    
 </body>
 </html>
+   
+       
+   
+ 
