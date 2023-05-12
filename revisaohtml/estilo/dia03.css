@@ -6,82 +6,88 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
-header,footer{
-    background-image: linear-gradient(to right,rgb(244, 244, 90),rgb(111, 111, 235),rgb(241, 121, 121));
-}
-
-header>h1{
+header{
     text-align: center;
-    padding: 30px;
-    font-size: 3rem;
+    font-size: 2em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.519);
+    padding: 20px;
+    background-color: #5050fc;
+    color: white;
 }
 
-header>menu{
-  
+nav>menu>ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: end;
+    background-color: #2d2dd3;
 }
 
-header>menu>ul{
-   list-style-type: none;
-   display: flex;
-   justify-content: flex-end;
-   padding: 8px;
-   
+nav>menu>ul>li{
+  margin-right: 10px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-header>menu>ul>li{
-    margin-right: 20px;
-    padding: 8px;
-    border:1px solid black ;
-    border-radius: 5px;
-    
-}
+nav>menu>ul>li:hover{
+    background-color: aliceblue;
+    transition-duration: 0.8ms;
+  }
 
-header>menu>ul>li:hover{
-   background-color: black;
-   color: gold;
-   transition-duration: 0.7s;
-}
+  nav>menu>ul>li>a:hover{
+    color: #5050fc;
+    transition-duration: 0.8ms;
+   }
+ 
+
+nav>menu>ul>li>a{
+   color: white;
+   text-decoration: none;
+   font-weight: bold;
+  }
 
 main>h1{
-   text-align: center;
-   padding: 20px;
+    text-align: center;
+    padding: 20px;
 }
 
-section{
-    background-color: darkkhaki;
-    max-width: 700px;
+main>section{
+    max-width: 600px;
+    background-color: gainsboro;
     padding: 10px;
     margin: auto;
-    line-height: 60px;
+    line-height: 50px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.207);
+    border-radius: 10px;
 }
 
-aside.palax{
-    max-width: 700px;
-    height: 500px;
-    background-image: url('../imagem/poster/images.jpg');
-    background-size: 100% 100%;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+main>section>div{
+    max-width: 600px;
+    height: 400px;
     margin-bottom: 10px;
-    /*-----------------*/
+    background-image: url('../imagem/poster/images.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
     position: relative;
+
 }
 
-aside.palax>div{
-    width: 200px;
-    height: 200px;
-    background-color: rgba(0, 0, 0, 0.544);
-    margin: auto;
-    /*-----------------*/
+main>section>div>aside{
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.556);
     position: absolute;
     left: 50%;
     top: 50%;
-
     transform: translate(-50%,-50%);
 }
 
 footer{
     text-align: center;
+    background-color: #2d2dd3;
+    color: white;
+    text-shadow: 2px 2px 4px black;
     padding: 20px;
 }

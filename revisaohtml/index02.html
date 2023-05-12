@@ -1,69 +1,112 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVISÃO DIA 03</title>
-    <link rel="stylesheet" href="estilo/dia03.css">
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>revisão dia 03</title>
+     <link rel="stylesheet" href="estilo/dia03.css">
 </head>
 <body>
-    <header>
-          <h1>SITE EXEMPLO</h1>
-                       <hr>
+     <header>
+            <h1>SITE EXEMPL3</h1>
+     </header>
+     <nav>
           <menu>
-                <ul>
-                    <li>principal</li>
-                    <li>videos</li>
-                    <li>fotos</li>
-                    <li>contatos</li>
-                </ul>
+               <ul>
+                   <li><a href="#">menu</a></li>
+                   <li><a href="#">foto</a></li>
+                   <li><a href="#">video</a></li>
+                   <li><a href="#">contato</a></li>
+               </ul>
           </menu>
-    </header>
-
-    <main>
-           <h1>LINKS</h1>
-
+     </nav>
+     <main>
+          <h1>LINKS</h1>
+          <section>
+               <h2>links simples externo</h2>
+               <a href="https://www.youtube.com/" target="_blank" rel="external">youtube/nova aba</a> <br>
+               <a href="https://www.youtube.com/" target="_self" rel="external">youtube/mesma aba</a>
+               <h2>links simples interno</h2>
+               <a href="index01.html" target="_blank" rel="next">link interno</a>
+<br>
+               <a href="indexo1.html" target="_self" rel="next"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQkcIvyi2EQiePN9IEqL5vFTuXlYpI7prsHng&usqp=CAU" alt="icone"></a>
+          </section>
+          <h1>DOWLOADS</h1>
            <section>
-                 <h2>externo</h2>
-                 <a href="https://www.youtube.com/" target="_blank" rel="external">link youtube</a>
-                 <h2>interno</h2>
-                 <a href="index01.html" target="_self" rel="next">link interno</a>
-                 <h2>link + imagem</h2>
-                 <a href="https://github.com/GideaoAlcantara" target="_blank" rel="external"><img src="https://upload.wikimedia.org/wikipedia/commons/c/c2/GitHub_Invertocat_Logo.svg" alt="GitHub_Invertocat_Logo" width="100px"></a>
+               <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="livro.pdf" type="application/pdf">livro.pdf</a>
            </section>
-
-           <h1>DOWLOADS</h1>
-
+           <h1>BACKGROUND</h1>
            <section>
-                <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="livro.pdf" type="application/pdf" rel="internal">livro.pdf</a>
+                 <div>
+                         <aside></aside>                       
+                 </div>
+                 <div>
+                         <aside></aside>
+                 </div>
+                 <div>
+                         <aside></aside>
+                 </div>
            </section>
-
-           <h1>EFEITO PALALAX</h1>
-
+           <h1>FORMULARIO PARTE2</h1>
            <section>
-                <article>
-                     <aside class="palax">
-                             <div>
-                                <p style="color: crimson;">caixa centralizada</p>
-                             </div>
-                     </aside>
-                     <aside class="palax">
-                             <div>
-                                <p style="color: crimson;">caixa centralizada</p>
-                             </div>
-                     </aside>
-                     <aside class="palax">
-                             <div>
-                                <p style="color: crimson;">caixa centralizada</p>
-                             </div>                        
-                     </aside>
-                </article>
-           </section>
-    </main>
+               <form action="script/exemplo.js" method="get">
+                    <h2>telefone</h2>
+                    <label for="itel">telefone :</label>
+                    <input type="tel" name="itel" id="itel">
+                    <h2>email</h2>
+                    <label for="iemail">email :</label>
+                    <input type="email" name="iemail" id="iemail">
+                    <h2>radio</h2>
+                    <label for="iradio">Radio opcao 01 :</label>
+                    <input type="radio" name="iradio" id="iradio">
+                    <label for="iiradio">Radio opcao 02 :</label>
+                    <input type="radio" name="iradio" id="iiradio" checked>
+                    <h2>checkbox</h2>
+                    <label for="icaixa">opcão 01:</label>
+                    <input type="checkbox" name="icaixa" id="icaixa">
+                    <label for="iicaixa">opcao 02:</label>
+                    <input type="checkbox" name="iicaixa" id="iicaixa">
+                    <h2>color</h2>
+                    <label for="icor">escolha a cor:</label>
+                    <input type="color" name="icor" id="icor">
+                    <h2>range</h2>
+                    <label for="irang">escolhe range:</label>
+                    <input type="range" name="irang" id="irang">
+                    <h2>Files</h2>
+                    <label for="ifile">escolha files:</label>
+                    <input type="file" name="ifile" id="ifile">
+                    <h2>seelect</h2>
+                    <label for="isel">selecina o nome:</label>
+                    <select name="nome" id="isel">
+                         <option value="">pedro</option>
+                         <option value="">joese</option>
+                         <option value="">julia</option>
+                         <option value="">kassia</option>
+                    </select>
+                    <h2>textarea</h2>
+                    <label for="itextarea">digita textaarea:</label> <br>
+                    <textarea name="" id="" cols="30" rows="10">
 
-    <footer>
-         <p>&copy;GIDEAOTEC</p>
-    </footer>
+                    </textarea>
+                    <h2>fieldset</h2>
+                    <fieldset>
+                         <legend>Dados</legend>
+                         <label for="ttxt">nome:</label>
+                         <input type="text" name="ttxt" id="ttxt">
+                          <br>
+                         <label for="tt">sobrenome:</label>
+                         <input type="text" name="tt" id="ttt">
+                    </fieldset>
+                    <div>
+                         <input type="submit" value="enviar">
+                    </div>
+               </form>
+           </section>
+     </main>
+
+     <footer>
+          <p>&copy;GIDEAOTEC</p>
+     </footer>
 </body>
 </html>
