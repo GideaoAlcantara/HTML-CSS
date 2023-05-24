@@ -1,156 +1,110 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REVISÃO DO DIA02</title>
-    <style>
-        body{
-            position: relative;
-        }
-        header{
-            background-color: cadetblue;
-            color: aliceblue;
-            padding: 20px;
-            text-align: center;
-            position: sticky;
-            top: 0;
-        }
-        header>h1{
-          
-        }
-        table#p1{
-            border-collapse: collapse;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table#p1 td{
-            border: 1px solid black;
-            padding: 10px;
-        }
-        table#p2 caption{
-              border: 1px solid black;
-        }
-        table#p2{
-            border-collapse: collapse;
-            font-family: Arial, Helvetica, sans-serif;
-        }
-        table#p2 th{
-            border: 1px solid black;
-            padding: 10px;
-            font-weight: 100;
-        }
-        table#p2 thead th{
-            font-weight: 900;
-        }
-
-        table#p2 tbody  tr:nth-child(2n-1){
-             background-color: bisque;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Revisão dia 02</title>
+  <link rel="stylesheet" href="estilo/dia02.css">
 </head>
 <body>
-    <header>
-           <h1>SITE EXEMPL2</h1>
-    </header>
+     <header>
+           <h1>site exmpl2</h1>
+     </header>
+     <main> 
+          <h1>semantica de html</h1>
+          <section>
+               <dl>
+                  <dt>nome de rua</dt>
+                  <dd>
+                      <address>rua maringá - 32</address>
+                  </dd>
+                  <dt>negrito</dt>
+                  <dd>
+                      <strong>palavra em negrito</strong>
+                  </dd>
+                  <dt>Italico</dt>
+                  <dd>
+                     <em> palavra em italico</em>
+                  </dd>
+                  <dt>marcador</dt>
+                  <dd>
+                     <mark>palavra marcada</mark>
+                  </dd>
+                  <dt>Código</dt>
+                  <dd>
+                     <code>palavra em código</code>
+                  </dd>
+                  <dt>citação simples</dt>
+                  <dd>
+                     <q>citação com aspas</q>
+                  </dd>
+                  <dt>citação composta</dt>
+                  <dd>
+                    <blockquote>citação sem aspas composta</blockquote>
+                  </dd>
+                  <dt>sub</dt>
+                  <dd>
+                      H<sub>2</sub>O
+                  </dd>
+                  <dt>sup</dt>
+                  <dd>
+                      X<sup>2</sup>
+                  </dd>
+                  <dt>texto pequeno</dt>
+                  <dd><small>texto pequeno</small></dd>
+                  <dt>taxado</dt>
+                  <dd><del>palavra taxado</del></dd>
+                  <dt>sublinhado</dt>
+                  <dd><ins>palavra sublinhado</ins></dd>
+                  <dt>abreviação</dt>
+                  <dd><abbr title="texto">txt</abbr></dd>
+               </dl>
+          </section>
+          <h1>lista</h1>
+          <section>
+              <h2>lista ordenada</h2>
+              <ol>
+                <li>exemplo 01</li>
+                <li>exemplo 02</li>
+                <li>exemplo 03</li>
+                <li>exemplo 04</li>
+              </ol>
+              <h2>lista não ordenada</h2>
+              <ul>
+                <li>exemplo 01</li>
+                <li>exemplo 02</li>
+                <li>exemplo 03</li>
+                <li>exemplo 04</li>
+              </ul>
+          </section>
+          <h1>audio</h1>
+          <section>
+            <h2>audio simples</h2>
+             <audio src="audio/Animal Squealing .mp3" controls></audio>
+             <h2>audio composto</h2>
+             <audio controls preload="metadata">
+                  <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+                  <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+                  <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+             </audio>
+          </section>
+          <h1>video</h1>
+          <section>
+            <h2>video simples</h2>
+            <video src="video/pexels-koolshooters-8976549.mp4" controls width="400px"></video>
+            <h2>video composto</h2>
+            <video controls width="400px" loop>
+                <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+                <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+                <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+            </video>
+            <h2>video youtube</h2>
+            <iframe width="400px" height="250px" src="https://www.youtube.com/embed/r_CdqReR_Tc?start=120" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          </section>
+     </main>
+     <footer>
 
-    <main>
-         <h1>tabelas</h1>
-         <section>
-            <h2>tabela simples</h2>
-               <table id="p1">
-                     <tr>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                     </tr>
-                     <tr>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                     </tr>
-                     <tr>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                     </tr>
-                     <tr>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                        <td>palavras</td>
-                     </tr>
-               </table>
-               <h2>tabela grade</h2>
-               <table id="p2">
-                              <caption>filmes favoritos</caption>
-                    <thead>
-                           <tr>
-                               <th>grupos</th>
-                               <th>nomes</th>
-                               <th colspan="3" scope="colgroup">filmes</th>
-                           </tr>
-                    </thead>
-                    <tbody>
-                          <tr>
-                            <th rowspan="3" scope="rowgroup">feminino</th>
-                            <th>ana</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>  
-                          <tr>
-                            <th>julia</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>
-                          <tr>
-                            <th>fernanda</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>
-                          <tr>
-                            <th rowspan="3" scope="rowgroup">masculino</th>
-                            <th>joao</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>  
-                          <tr>
-                            <th>berto</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>
-                          <tr>
-                            <th>carllos</th>
-                            <th>shelk</th>
-                            <th>sperdman</th>
-                            <th>batman</th>
-                          </tr>
-                    </tbody>
-                    <tfoot>
-                          <tr>
-                            <th colspan="4">total</th>
-                            <th>100</th>
-                          </tr>
-                    </tfoot>
-               </table>
-         </section>
-    </main>
-
-    <footer>
-          <p>&copy;GIDEAOTEC</p>
-    </footer>
-    
+     </footer>
 </body>
 </html>
-   
-       
-   
- 
