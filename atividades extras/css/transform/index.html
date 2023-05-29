@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS TRANSFORM</title>
+    <style>
+         div{
+            width: 200px;
+            height: 200px;
+            background-color: rgb(61, 216, 193);
+            margin-bottom: 10px;
+         }
+         div#ex01:hover{
+            transform: scale(0.75);
+         }
+         div#ex02:hover{
+            transform: scalex(0.5);
+         }
+         div#ex03:hover{
+            transform: rotate(45deg);
+         }
+         div#ex04:hover{
+            transform: skewX(-25deg);
+         }
+         div#ex05:hover{
+            transform: skew(20deg,5deg);
+         }
+         div#ex06:hover{
+            transform: translate(5px,2px);
+         }
+         div#ex07:hover{
+            transform: matrix(0.7,-0.5,0.5,0.4,0.5,0.7);
+         }
+    </style>
+</head>
+<body>
+     <div id="ex01">1</div>
+     <div id="ex02">2</div>
+     <div id="ex03">3</div>
+     <div id="ex04">4</div>
+     <div id="ex05">5</div>
+     <div id="ex06">6</div>
+     <div id="ex07">7</div>
+</body>
+</html>

@@ -1,102 +1,105 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Revisão primeira parte</title>
-
-    <link rel="shortcut icon" href="imagem/favicon/favicon_io/favicon.ico" type="image/x-icon">
-
-    <link rel="stylesheet" href="estilo/dia01.css">
-
-    <!--
-          <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-          <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-          <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-          <link rel="manifest" href="/site.webmanifest">
-    -->
-    
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Revisão 1 dia </title>
+  <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo/dia01.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-     <header>
-             <h1>SITE EXEMPL1</h1>
-     </header>
-       <hr>
-     <main>
-          <h2>paragrafos e quebras  &#x1F4DA</h2>
-         <section>
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius ab doloribus et alias necessitatibus. Corrupti optio dolores eligendi necessitatibus a tempora. Quisquam labore, excepturi soluta voluptatibus autem officiis alias nesciunt?</p>
-
-           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. <br>
-              Fugiat consectetur aut neque tenetur, explicabo similique <br>
-              ratione quibusdam adipisci dolor. Odio corporis iure eveniet <br>
-               cumque perspiciatis magnam nihil vitae quas dicta.</p>
-
-               <!--exemplo de texto anotação-->
-         </section>
-         <h2>imagem</h2>
-         <section>
-             <h3>imagem simples</h3>
-             <img src="imagem/poster/images.jpg" alt="cavalo">
-             <h3>imagem url internet</h3>
-             <img src="https://th.bing.com/th/id/OIP.V-UBMBm5Zf-9sI0-M19bGAHaHa?pid=ImgDet&rs=1" alt="foto" width="300px">
-             <h3>imagem flexivel</h3>
-             <picture>
-                 <source media="(max-width: 700px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+   <header>
+        <h1> site exempl1 </h1>
+        <!--texto de exemplo-->
+        <nav> 
+            <span class="material-symbols-outlined" onclick="menu()">
+              density_medium
+            </span>
+            <script src="script/menu.js"></script>
+             <menu>
+                  <ul>
+                     <li><a href="#">menu</a></li>
+                     <li><a href="#">foto</a></li>
+                     <li><a href="#">video</a></li>
+                     <li><a href="#">contato</a></li>
+                  </ul>
+             </menu>
+        </nav>
+   </header>
+   <ul id="menu">
+      <li><a href="#">menu</a></li>
+      <li><a href="#">foto</a></li>
+      <li><a href="#">video</a></li>
+      <li><a href="#">contato</a></li>
+     </ul>
+   <main>
+      <h1>paragrafo e quebra  &#x1F979</h1>
+      <article>
+          <h2>texto comum</h2>
+          <aside>
+              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque odit aut ullam numquam ratione laborum aliquid a tempora molestias, nisi, ipsa, voluptate et quia deserunt! Quod hic molestias iusto eos? Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima debitis harum perspiciatis illo minus, atque quo tempore doloremque enim praesentium quam maxime voluptatibus, consequatur nobis, quia nesciunt hic odio nisi.</p>
+          </aside>
+          <h2>texto com quebra</h2>
+          <aside>
+              <p>Lorem ipsum dolor sit amet <br> consectetur adipisicing elit. <br> Sunt doloremque dicta illo <br> nam expedita! Accusamus <br> deleniti ut, vel quaerat incidunt <br> dolorum quidem, non, voluptatem <br> in distinctio aliquid alias pariatur aut.</p>
+          </aside>
+      </article>
+      <h1>imagem 🥹</h1>
+      <article>
+         <h2>imagem simples</h2>
+         <aside>
+          <img src="imagem/poster/images.jpg" alt="tela">
+         </aside>
+         <h2>imagem internet</h2>
+         <aside>
+          <img src="data:image/jpeg;base64,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" alt="tela">
+         </aside>
+         <h2>imagem flxivel</h2>
+         <aside>
+            <picture>
+                 <source media="(max-width: 750px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
                  <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
-                 <img src="imagem/responsivo/imagempcg.jpg" alt="imagem flexivel">
-             </picture>
-         </section>
-         <h2>iframe</h2>
-         <section>
-             <h3>iframe simples</h3>
-             <iframe src="https://ge.globo.com/" frameborder="1" width="300px" height="300px"></iframe>
-             <h3>iframe com links</h3>
-             <ul>
-              <li><a href="indexo1.html" target="frame">site 001</a></li>
-              <li><a href="index01.html" target="frame">site 002</a></li>
-              <li><a href="index02.html" target="frame">site 003</a></li>
-             </ul>
-
-             <iframe src="" frameborder="1" width="300px" height="300px" name="frame"></iframe>
-         </section>
-         <h2>Formulario</h2>
-         <section>
-             <form action="script/exemplo.js" method="get">
-                   <p>
-                    <label for="itexto">add uma palavra :</label>
-                    <input type="text" name="texto" id="itexto" required minlength="3" maxlength="5" size="33%" placeholder="digita a palavra">
-                   </p>
-                   <br>
-                  <p>
-                    <label for="inumb">add um numero :</label>
-                    <input type="number" name="numb" id="inumb">
-                  </p>
-                  <br>
-                  <p>
-                     <label for="imes">add mes :</label>
-                     <input type="month" name="imes" id="imes">
-                  </p>
-                  <br>
-                  <p>
-                    <label for="idate">add datas :</label>
-                    <input type="date" name="idate" id="idate">
-                  </p>
-                  <br>
-                  <p>
-                     <label for="itempo">add tempos :</label>
-                     <input type="time" name="tempo" id="itempo">
-                  </p>
+                 <img src="imagem/responsivo/imagempcg.jpg" alt="imagem">
+            </picture>
+         </aside>
+      </article>
+      <h1>IFRAME</h1>
+      <article>
+         <h1>iframe simples</h1>
+         <iframe src="https://www.bet365.com/#/HO/" frameborder="1" width="200px" height="200px" id="iiframe"></iframe>
+         <h2>iframe com linhas</h2>
+         <ul id="teste1">
+          <li><a href="index02.html" target="frame" >site 01</a></li>
+          <li><a href="index01.html" target="frame" >site 01</a></li>
+          <li><a href="https://www.bet365.com/#/HO/" target="frame">site 03</a></li>
+         </ul>
+         <iframe src="" frameborder="1" name="frame" width="200px" height="200px"></iframe>
+      </article>
+      <h1>formulário parte 01</h1>
+      <article>
+          <form action="script/exemplo.js" method="post" autocomplete="on">
+                  <h2>quadro texto</h2>
+                 <label for="itext">add texto :</label>
+                 <input type="text" name="text" id="itext" minlength="3" maxlength="10" placeholder="escrever texto">
+                 <h2>quadro numero</h2>
+                 <label for="inum">add numero :</label>
+                 <input type="number" name="numb" id="inumb" min="3" max="10">
+                 <h2>quadro do mes</h2>
+                 <label for="imes">add mes :</label>
+                 <input type="month" name="mes" id="imes" required>
+                 <h2>quadro de data</h2>
+                 <label for="idata">add data:</label>
+                 <input type="date" name="data" id="idata" required>
+                 <h2>quadro de tempo</h2>
+                 <label for="itempo">add tempo:</label>
+                 <input type="time" name="tempo" id="itempo">
+                 <h2>envviar e apagar</h2>
                  <input type="submit" value="enviar">
                  <input type="reset" value="limpar">
-             </form>
-         </section>
-        
-     </main>
-
-     <footer>
-
-     </footer>
+          </form>
+      </article>
+   </main>
 </body>
 </html>
