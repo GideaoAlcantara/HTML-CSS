@@ -1,58 +1,116 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-     <meta charset="UTF-8">
-     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <title>Revisão dia 03</title>
-     <link rel="stylesheet" href="estilo/dia03.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>REVISÃO DE SITE 03</title>
+    <link rel="stylesheet" href="estilo/dia03.css">
 </head>
 <body>
-     <header>
-         <h1>site de exempl3</h1>  
-     </header>
-     <main>
-        <h1>links</h1>
+    <header>
+         <h1>
+            site exempl3
+         </h1>
+    </header>
+    <main>
+        <h1>LINKS</h1>
         <section>
-            <h2>links simples</h2>
-            <a href="https://www.youtube.com/" target="_blank" rel="external">youtube/nova aba</a>
-            <a href="https://www.youtube.com/" target="_self" rel="external">youtube/mesma aba</a>
-            <h2>link com imagens</h2>
-            <a href="index01.html" target="_blank" rel="next"><img src="imagem/poster/images.jpg" alt="seta"></a>
-            <a href="index01.html" target="_blank" rel="next"><img src="imagem/responsivo/imagempcp.jpg" alt="seta" width="300px"></a>
+            <h2>lnks externos</h2>
+            <a href="https://www.youtube.com/" target="_blank" rel="external">youtube/nova_aba</a> <br>
+            <a href="https://www.youtube.com/" target="_self" rel="external">youtube/mesma_aba</a>
+            <h2>links internos</h2>
+            <a href="index01.html" target="_blank" rel="next">site_exemplo02</a>
+            <h2>link + imagem</h2>
+            <a href="https://www.youtube.com/" target="_parent" rel="external"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStkjJTHtM9HcfZp0AB7TDrdnRnKxB54dmbFQ&usqp=CAU" alt="logo_youtube" width="100px"></a>
         </section>
-        <h1>dowloads</h1>
+        <h1>Dowloads</h1>
         <section>
-             <h2>dowloads simples</h2>
-            <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="livro.pdf">livro de pdf</a>
+            <a href="pdf/18 - Aprendendo Git e GitHub.pdf" download="livro.pdf" type="apllication/pdf">livroPDF</a>
         </section>
-        <h1>formulario</h1>
+        <h1>FORMULARIO PARTE 02</h1>
         <section>
-            <form action="#" method="post" autocomplete="on">
-               <h2>caixa de texto</h2>
-               <label for="itext">digite texto:</label>
-               <input type="text" name="text" id="itext" placeholder="palavra">
-               <h2>caixa de numero</h2>
-               <label for="inumb">digite numero:</label>
-               <input type="number" name="numb" id="inumb" min="3" max="5" step="0.5">
-               <h2>caixa do mes</h2>
-               <label for="imes">digito o mes:</label>
-               <input type="month" name="mes" id="imes">
-               <h2>caixa do dia</h2>
-               <label for="idia">digita o dia:</label>
-               <input type="date" name="dia" id="idia">
-               <h2>caixa da hora</h2>
-               <label for="ihora"></label>
-               <input type="time" name="hora" id="ihora">
-               <h2>enviar</h2>
-               <input type="submit" value="enviar">
-               <h2>apagar</h2>
-               <input type="reset" value="apagar">
+            <form action="script/exemplo.js" method="post">
+                <h2>input email</h2>
+                <label for="iemail">EMAIL: </label>
+                <input type="email" name="email" id="iemail">
+                <h2>input telefone</h2>
+                <label for="itel">TLEFONE: </label>
+                <input type="tel" name="tel" id="itel">
+                <h2>input checkbox</h2>
+                <input type="checkbox" name="" id="icaixa">
+                <label for="icaixxa">carro</label>
+                <input type="checkbox" name="" id="iicaixa">
+                <label for="iicaixxa">moto</label>
+                <input type="checkbox" name="" id="iiicaixa">
+                <label for="iiicaixxa">bike</label>
+                <h2>input radio</h2>
+                <label for="iex">carro</label>
+                <input type="radio" name="ex" id="iex" checked>
+                <label for="iiex">moto</label>
+                <input type="radio" name="ex" id="iiex" checked>
+                <label for="iiiex">bike</label>
+                <input type="radio" name="ex" id="iiiex" checked>
+                <h2>input color</h2>
+                <label for="icor">escolha a cor :</label>
+                <input type="color" name="cor" id="icor">
+                <h2>input range</h2>
+                <label for="irange">aproximidade:</label>
+                <input type="range" name="rang" id="irange" max="10" min="0">
+                <h2>enviar arquivo :</h2>
+                <label for="ffile">add arquivo:</label>
+                <input type="file" name="ffile" id="ffile">
+                <h2>select + option</h2>
+                <label for="selecao">selecione o modelo de carro:</label>
+                <select name="carro" id="selecao">
+                
+                           <option value="wolwagner"><a href="https://www.youtube.com/" target="_blank">youtube</a></option>
+                           <option value="wolwagner">gol</option>
+                           <option value="wolwagner">golf gt</option>
+                           <option value="wolwagner">sedan</option>
+                </select>
+                <h3>select + optgroup + option</h3>
+                <label for="estado">escolha o estado</label>
+                <select name="estado" id="iestado">
+                    <optgroup label="região sudeste">
+                         <option value="RJ">Rio de Janeiro</option>
+                         <option value="SP">São Paulo</option>
+                         <option value="MG">Minas Gerais</option>
+                    </optgroup>
+                    <optgroup label="região nordeste">
+                          <option value="CE">Ceará</option>
+                          <option value="BA">Bahia</option>
+                          <option value="PE">Pernanbuco</option>
+                    </optgroup>
+                </select>
+                <h2>datalist</h2>
+                <p>
+                    <label for="iprof">profissões:</label>
+                    <input type="text" name="iprof" id="iprof" list="listprof">
+
+                    <datalist id="listprof">
+                           <option value="MED">Médico</option>
+                           <option value="ADM">Administrador</option>
+                           <option value="PROG">Programador</option>
+                           <option value="PROF">Professsor</option>
+                    </datalist>
+                </p>
+                <h2>texto area</h2>
+                <label for="ittxt">add texto:</label> <br>
+                <textarea name="ittxt" id="ittxt" cols="30" rows="10"></textarea>
+                <h2>fieldset</h2>
+                <fieldset style="width: 400px;">
+                    <legend>preencha os dados</legend>
+                    <label for="inome">NOME:</label>
+                    <input type="text" name="inome" id="inome">  <br>
+                    <label for="isobrenome">SOBRENOME</label>
+                    <input type="text" name="isobrenome" id="isobrenome">
+                </fieldset>
             </form>
         </section>
-     </main>
-     <footer>
-
-     </footer>
+    </main>
+    <footer>
+        <p>&copy;Gtac.onfor</p>
+    </footer>
 </body>
 </html>
