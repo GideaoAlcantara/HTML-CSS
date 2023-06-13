@@ -1,5 +1,5 @@
 function menu() {
-    let men = window.document.querySelector('ul#menu')
+    let men = window.document.querySelector('div#menu')
     
     if (men.style.display=='block') {
            men.style.display='none'
