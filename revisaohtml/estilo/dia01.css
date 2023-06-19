@@ -5,128 +5,127 @@
     src: url('../fonte/SAKURATA.ttf') format('truetype');
 }
 
+:root{
+    --cor01:#000000;
+    --cor02:#14213D;
+    --cor03:#FCA311;
+    --cor04:#E5E5E5;
+    --cor05:#FFFFFF;
+
+    --font-sakurata:'baixado';
+}
+
 *{
     padding: 0px;
     margin: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     list-style-type: none;
 }
 
-:root{
-    --cor01: #B9D6F2;
-    --cor02: #061A40;
-    --cor03: #0353A4;
-    --cor04: #006DAA;
-    --cor05: #003559;
-
-    --baixo:'baixado';
+header{
+    background-image: linear-gradient(to right,#000000,#14213D,#FCA311,#14213D,#000000);
 }
-
 
 header>h1{
     text-align: center;
-    background-image: linear-gradient(to right, #0353A4,#003559,#006DAA);
-    color: var(--cor01);
-    font-family: var(--baixo);
+    font-family: var(--font-sakurata);
     font-size: 3rem;
-    padding: 20px;
-}
+    font-weight:  lighter;
+    padding: 30px;
+    color: var(--cor05);
+    text-shadow: 0px 0px 10px #000000;
 
-nav>menu{
-    display: flex;
-    justify-content: space-between;
-    padding: 10px;
-    background-image: linear-gradient(to right, #0353A4,#003559,#006DAA);
-    color: var(--cor01);
-   
 }
-
-div#menu{
-    margin-bottom: 30px;
-    line-height: 30px;
-    width: 300px;
-    display: none;
-}
-
-div#menu>ul>li{
-    text-align: center;
-    border: 1px solid #061A40;
-    padding: 10px;
-    background-color: #B9D6F2;
-    font-weight: bold;
-    color: #061A40;
-}
-
-div#menu>ul>li:hover{
-    background-color: #061A40;
-    color: #B9D6F2; 
-}
-
+/*------menu------*/
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
   'opsz' 48;
-  font-size: 1.5em;
-  cursor: pointer;
+  color: var(--cor05);
 }
 
-.material-symbols-outlined:hover {
-    background-color: #d7dfe4;
-    color: #061A40;
-    padding: 0px 10px 0px 10px;
-    border-radius: 10px;
-}
-
-
-nav>menu>ul{
-    display: flex;
-    list-style-type: none;
-}
-
-nav>menu>ul>li{
-    margin-right: 40px;
-    font-weight: bold;
-    font-size: 1.5em;
+.material-symbols-outlined:hover{
+    color: var(--cor03);
     cursor: pointer;
 }
 
+nav>ul#mann{
+    display: none;
+}
+
+nav>ul>li{
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #FCA311;
+    padding: 10px;
+}
+
+nav>ul>li:hover{
+    background-color: #000000;
+    color: #FCA311;
+    cursor: pointer;
+}
+
+
+nav>menu{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right,#000000,#14213D,#14213D,#000000);
+    padding: 15px;
+}
+
+nav>menu>ul{
+    list-style: none;
+    display: flex;
+}
+
+nav>menu>ul>li{
+    margin-right: 50px;
+    color: var(--cor05);
+    text-transform:uppercase ;
+    font-weight: bold;
+}
+
 nav>menu>ul>li:hover{
-   background-color: #d7dfe4;
-   color: #061A40;
-   width: 100%;
-   padding: 0px 10px 0px 10px;
-   border-radius: 10px;
+    cursor: pointer;
+    color: var(--cor03);
 }
 
-main>section#prime{
-    margin-top: 50px;
-}
-
-
+/*-----corpo------*/
 main>section{
     max-width: 700px;
-    background-color: var(--cor01);
-    margin-bottom: 30px;
-    padding: 10px;
-    line-height: 50px;
+    background-color: var(--cor04);
     margin: auto;
+    padding: 10px;
+    text-align: justify;
+    line-height: 50px;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.43);
 }
-
 main>section>h1{
     text-align: center;
-    background-color:#2a5a87;
 }
 
-
-
-main>section>article>p{
-  font-weight: 700;
-  font-style: italic;
+main>section.bloco{
+    margin-top: 60px;
 }
 
-iframe{
-    display: block;
-    margin: auto;
+/*----------rodapé----------*/
+
+footer{
+    background-image: linear-gradient(to right,#000000,#14213D,#14213D,#000000);
+    text-align: center;
+    color: #FCA311;
+    font-size: 2em;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+footer:hover{
+    color: #e78e00e6;
+    cursor: pointer;
 }
