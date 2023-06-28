@@ -2,97 +2,148 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>revisão dia 02</title>
+  <title>Revisão dia 02</title>
   <link rel="stylesheet" href="estilo/dia02.css">
 </head>
 <body>
-    <header>
-         <h1>site exempl2</h1>
-    </header>
-
-    <main>
-         <h1>semntica html</h1>
-         <article id="semhtml">
-             <dl>
-                <dt>nome de rua</dt>
-                <dd><address>rua pamonha - 102</address></dd>
-                <dt>negrito</dt>
-                <dd><strong>texto negrito</strong></dd>
-                <dt>italico</dt>
-                <dd><em>texto italico</em></dd>
-                <dt>marcador</dt>
-                <dd><mark>texto marcado</mark></dd>
-                <dt>sublinhado</dt>
-                <dd><ins>texto sublinhado</ins></dd>
-                <dt>taxado</dt>
-                <dd><del>texto taxado</del></dd>
-                <dt>texto code</dt>
-                <dd><code>texto em codigo</code></dd>
-                <dt>add com sub</dt>
-                <dd>X <sub>2</sub></dd>
-                <dt>add com sup</dt>
-                <dd>X <sup>2</sup></dd>
-                <dt>citação simples</dt>
-                <dd><q>citação de texto com aspa</q></dd>
-                <dt>citacão composta</dt>
-                <dd><blockquote>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ex temporibus beatae fugiat optio tempora ut, citção composta sem aspa</blockquote></dd>
-                <dt>texto pequeno</dt>
-                <dd><small>texto pequeno</small></dd>
-                <dt>texto abreviado</dt>
-                <dd><abbr title="giadeao alcantara lima">G.A.L</abbr></dd>
-             </dl>
-         </article>
-         <h1>textos lorem</h1>
-         <article id="lorem">
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui officiis pariatur temporibus id, rem porro maiores? Nesciunt aspernatur incidunt corrupti illum dolorum! Quis necessitatibus aut magnam, adipisci soluta optio assumenda!</p>
-         </article>
-         <h1>lista</h1>
+  <header>
+           <h1>site exempl2</h1>
+  </header>
+  <main>
+       <section>
+         <h1>TABELA</h1>
          <article>
+          <h2>tabela simples</h2>
+          <table>
+              <tr id="bloco01">
+                 <td class="bloco1">nome</td>
+                 <td class="bloco1">idade</td>
+                 <td class="bloco1">altura</td>
+                 <td class="bloco1">peso</td>
+              </tr>
+              <tr>
+                <td class="bloco1">josé</td>
+                <td class="bloco1">12 anos</td>
+                <td class="bloco1">1.60</td>
+                <td class="bloco1">60Kg</td>
+             </tr>
+             <tr>
+              <td class="bloco1">maria</td>
+              <td class="bloco1">14 anos</td>
+              <td class="bloco1">1.60</td>
+              <td class="bloco1">69kg</td>
+           </tr>
+          </table>
+          <h2>tabela composta</h2>
+          <table>
+            <caption>alunos</caption>
+             <thead style="background-color: black;color: aliceblue;">
+                   <tr>
+                    <th>nome</th>
+                    <th>idade</th>
+                    <th>altura</th>
+                    <th>peso</th>
+                   </tr>
+             </thead>
+             <tbody>
+                   <tr>
+                    <th>joão</th>
+                    <th>16 anos</th>
+                    <th>1.7</th>
+                    <th>72kg</th>
+                   </tr>
+                   <tr>
+                    <th>julia</th>
+                    <th>15 anos</th>
+                    <th>1.69</th>
+                    <th>65kg</th>
+                   </tr>
+             </tbody>
+             <tfoot>
+                  <tr>
+                    <th>total de alunos</th>
+                    <th colspan="3">02</th>
+                  </tr>
+             </tfoot>
+          </table>
+         </article>
+       </section>
+
+       <section>
+        <h1>semantica html</h1>
+        <article>
+          <p>
+             <address>nome de rua</address><br>
+             <strong style="color: red;">negrito</strong><br>
+             <em>italico</em><br>
+             <mark>marcação</mark><br>
+             <code>codigo</code><br>
+             x<sub>2</sub><br>
+             <q>citação simplees</q>
+             <blockquote>citação composta de intrnet</blockquote> <br>
+             x <sup>2</sup><br>
+             <bdo dir="hipertexto">hptxt</bdo><br>
+             <small>TEXTO PEQUENO</small><br>
+             <del>taxado</del><br>
+             <ins>sublinhado</ins><br>
+             <abbr title="textosimples">txtsip</abbr>
+          </p>
+        </article>
+       </section>
+       <section>
+        <h1>LISTA</h1>
+        <article>
           <h2>lista ordenada</h2>
           <ol>
-            <li>texto 01</li>
-            <li>texto o2</li>
-            <li>texto o3</li>
-            <li>texto o4</li>
-            <li>texto o5</li>
-            <li>texto o6</li>
+            <li>ex01</li>
+            <li>ex02</li>
+            <li>ex03</li>
+            <li>ex04</li>
           </ol>
           <h2>lista não ordenada</h2>
           <ul>
-            <li>texto exemplo</li>
-            <li>texto exemplo</li>
-            <li>texto exemplo</li>
-            <li>texto exemplo</li>
-            <li>texto exemplo</li>
-            <li>texto exemplo</li>
+            <li>ex01</li>
+            <li>ex02</li>
+            <li>ex03</li>
+            <li>ex04</li>
           </ul>
-         </article>
-         <h1>Audio</h1>
-         <article>
-            <h2>audio simples</h2>
-           <audio src="audio/Animal Squealing .mp3" controls></audio>
-           <h2>audio composto</h2>
-           <audio controls preload="metadata">
-              <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-              <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-              <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-           </audio>
-         </article>
-         <h1>video</h1>
-         <article>
+          <h2>lista definição</h2>
+          <dl>
+             <dt style="font-size: 2rem;">hipertexto</dt>
+             <dd>os hipeer textos são ...</dd>
+          </dl>
+        </article>
+       </section>
+       <section>
+        <h1>AUDIO</h1>
+        <article>
+          <h2>audio simplees</h2>
+          <audio src="audio/Animal Squealing .mp3" controls loop style="width: 100%;"></audio>
+          <h2>audio composto</h2>
+          <audio controls>
+               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+          </audio>
+        </article>
+       </section>
+       <section>
+        <h1>VIDEO</h1>
+        <article>
           <h2>video simples</h2>
-          <video src="video/pexels-koolshooters-8976549.mp4" controls width="300px" class="video"></video>
+          <video src="video/pexels-koolshooters-8976549.mp4" controls width="300px"></video>
           <h2>video composto</h2>
-          <video controls width="300px" poster="imagem/poster/images.jpg" class="video">
-            <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-            <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-            <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+          <video controls poster="imagem/poster/images.jpg" width="300px">
+               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
+               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
           </video>
-          <h2>video youtube</h2>
-          <iframe width="300px" height="300px" src="https://www.youtube.com/embed/AtHUc3kO7y0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen class="video"></iframe>
-         </article>
-    </main>
+        </article>
+       </section>
+  </main>
+  <footer>
+
+  </footer>
 </body>
 </html>
