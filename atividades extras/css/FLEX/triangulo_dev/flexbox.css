@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+div#pai{
+    display: flex;
+    align-items: flex-end;
+}
+
+div#pai>div.filho{
+    width: 100px;
+    height: 100px;
+    border: 1px solid red;
+}

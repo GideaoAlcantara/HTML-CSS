@@ -1,0 +1,76 @@
+@charset "UTF-8";
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin-bottom: 100px;
+}
+
+header,nav{
+    background-color: black;
+}
+
+header{
+    text-align: center;
+    padding: 10px;
+    color: rgb(251, 112, 112);
+}
+
+span{
+    color: white;
+    padding: 10px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav>ul{
+    list-style-type: none;
+    display: flex;
+    margin-right: 10px;
+}
+nav>ul>li{
+    margin-right: 10px;
+    color: white;
+    padding: 10px;
+}
+
+img{
+    width: 100%;
+}
+
+.grid2{
+    display: grid;
+    /*AQUI EM BAIXO O 200PX FAZ A IMAGEM FICAR FIXEL NESSE VALOR ,ISSO FAZ QUE A IMAGEM 1 DO FR SOFRA SOZINHO O WIDTH 100% DA IMG*/
+    grid-template-columns: 1fr 200px;
+    grid-gap: 20px;
+    max-width: 800px;
+    padding: 10px;
+    margin: 0 auto;
+}
+
+.sidebar>div{
+    margin-bottom: 10px;
+}
+
+@media screen and (max-width:600px){
+   .grid2{
+    grid-template-columns: 1fr;
+   }
+
+   .sidebar{
+       display: flex;
+       overflow: scroll;
+   }
+
+   .sidebar>div{
+      flex: 1 0 200px;
+      margin: 0 10px;
+   }
+}
