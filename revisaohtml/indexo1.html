@@ -1,115 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-   <meta charset="UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Revisão do 1 dia</title>
-   <link rel="stylesheet" href="estilo/dia01.css">
-   <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
-   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Primeiro Dia</title>
+  <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
+  <link rel="stylesheet" href="estilo/dia01.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 <body>
-   <header>
-        <h1>site exempl1</h1>
-   </header>
-   <nav>
-        <menu>
-         <span class="material-symbols-outlined" onclick="manu()">
-            menu
-         </span>
+    <header>
+            <h1>site exemplo 01</h1>
+    </header>
+    <nav>
+       <menu>
+           <ol>
+            <li><a href="#"><span class="material-symbols-outlined" onclick="botao()">
+              menu
+              </span></a></li>
+              <script src="script/menu.js"></script>
+           </ol>
 
-             <ul>
-               <li>foto</li>
-               <li>video</li>
-               <li>contato</li>
-             </ul>
-        </menu>
-        <ul id="mann">
-         <li>exemplo01</li>
-         <li>exemplo02</li>
-         <li>exemplo03</li>
-         <li>exemplo04</li>
-         <li>exemplo05</li>
-        </ul>
-        <script>
-             function manu() {
-               let x = window.document.getElementById('mann')
+           <ol>
+            <li><a href="#">foto</a></li>
+            <li><a href="#">video</a></li>
+            <li><a href="#">contato</a></li>
+           </ol>
+       </menu>
+       <ul id="menu">
+        <li>foto</li>
+        <li>video</li>
+        <li>redes sociais</li>
+        <li>contato</li>
+       </ul>
+    </nav>
+    <main>
+       <h1>Paragrafo e Quebra</h1> <hr>
+       <section>
+           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusantium cupiditate provident <br>consequuntur tenetur dicta ullam saepe harum ratione delectus atque perspiciatis, suscipit molestiae praesentium officia recusandae. Quos, commodi est?
+            <!--texto exemplo anotação-->
+           </p>
+       </section>
+       <h1>Imagem</h1>
+       <section>
+           <h2>imagem simples no arquivo</h2>
+           <img src="imagem/poster/images.jpg" alt="foto" width="300px">
+           <h2>imagem simples no URL</h2>
+           <img src="https://images.pexels.com/photos/17427379/pexels-photo-17427379/free-photo-of-animal-bicho-passaro-ave.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto de url" width="300px">
+           <h2>imagem responsivo</h2>
+           <picture width="300px">
+               <source media="(max-width: 667px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+               <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
+               <img src="imagem/responsivo/imagempcg.jpg" alt="responsivo">
+           </picture>
+           <h2>Favicon</h2>
+           <p>Emoge 😊</p>
+       </section>
+       <h1>Iframe</h1>
+       <section>
+          <h2>iframe comum</h2>
+          <iframe src="index01.html" frameborder="1" width="300px" height="500px"></iframe>
+          <h2>iframe navegando</h2>
+           <ol>
+            <li><a href="https://ge.globo.com/" target="frame">GloboEsporte</a></li>
+            <li><a href="https://www.globo.com/?utm_source=barraGCOM" target="frame">Globo.com</a></li>
+            <li><a href="https://ge.globo.com/cartola/?utm_source=globocom&utm_medium=header&utm_campaign=c2022_10_cartola_cartola-2022_alcance&utm_content=HEA_cartola-2022" target="frame">Cartola</a></li>
+           </ol>
+           <iframe src="" frameborder="1" name="frame" width="300px" height="500px"></iframe>
+       </section>
+       <h1>formulario</h1>
+        <section>
+          <form action="script/exemplo.js" method="get" autocomplete="on">
+            <h2>texto</h2>
+            <label for="txt">add texto :</label>
+            <input type="text" name="txt" id="txt" maxlength="10" minlength="4">
+            <h2>numero</h2>
+            <label for="num">add numero :</label>
+            <input type="number" name="num" id="num" min="2" max="10" autocomplete="cc-number">
+            <h2>mes</h2>
+            <label for="mes">add mes :</label>
+            <input type="month" name="mes" id="mes" placeholder="digiatar o mes">
+            <h2>Data</h2>
+            <label for="data">add Data :</label>
+            <input type="date" name="data" id="data" required>
+            <h2>tempo</h2>
+            <label for="temp">add horario :</label>
+            <input type="time" name="temp" id="temp">
+            <h2>enviar e apagar</h2>
+            <input type="submit" value="enviar">
+            <input type="reset" value="limpar">
+          </form>
+        </section>
+    </main>
+    <footer>
 
-               if (x.style.display=='none') {
-                     x.style.display='block'
-               } else {
-                  x.style.display='none'
-               }
-             }
-        </script>
-   </nav>
-   <main>
-       <section class="bloco">
-            <h1>PARAGRAFOS E QUEBRAS</h1>
-            <!--exemplos-->
-            <article>
-               <h2>paragrafo</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos vero ut temporibus, alias, tempora nesciunt neque rerum recusandae numquam ab obcaecati nemo officia excepturi amet quibusdam. Ducimus quaerat perferendis odio! Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci quasi maxime saepe consequuntur in ipsa voluptates itaque. Facilis, quibusdam! Incidunt, voluptatem asperiores accusamus distinctio doloremque deleniti sint id ratione enim.</p>
-               <h2>quebras</h2>
-               <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br> Enim, accusamus doloribus dolorum consequatur  debitis <br>, provident, aperiam harum cupiditate tempora alias adipisci <br>fugiat. Repellendus eveniet est minus provident ipsa distinctio!  &#x1F525</p>
-            </article>
-       </section>
-       <section class="bloco">
-         <h1>IMAGEM</h1>
-         <article>
-            <h2>imagem simples</h2>
-            <img src="imagem/poster/images.jpg" alt="foto" width="300px">
-            <h2>imagem da internet</h2>
-            <img src="https://cdn.pixabay.com/photo/2018/04/29/16/33/child-3360412_1280.jpg" alt="foto" width="300px">
-            <h2>imagem rsponsivo</h2>
-            <picture>
-                   <source media="(max-width: 700px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
-                   <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
-                   <img src="imagem/responsivo/imagempcg.jpg" alt="foto" width="300px">
-            </picture>
-         </article>
-       </section>
-       <section class="bloco">
-         <h1>IFRAME</h1>
-         <article>
-            <h2>iframe simples</h2>
-            <iframe src="https://ge.globo.com/" frameborder="1" width="300px" height="400px"></iframe>
-            <h2>iframe composto</h2>
-            <ul>
-              <li><a href="https://ge.globo.com/" target="iframe">site 01</a></li>
-              <li><a href="index01.html" target="iframe">site 02</a></li>
-              <li><a href="index02.html" target="iframe">site 03</a></li>
-            </ul>
-
-            <iframe src="" frameborder="1" width="300px" height="400px" name="iframe"></iframe>
-         </article>
-       </section>
-       <section class="bloco">
-              <h1>FORMULARIOS</h1>
-              <form action="index02.html" method="post" autocomplete="on">
-               <h2>input texto</h2>
-                 <label for="txt">adicionando texto:</label>
-                 <input type="text" name="txt" id="txt" minlength="4" maxlength="8" placeholder="seu nome">
-               <h2>input number</h2>
-                 <label for="numb">adicionando numero:</label>
-                 <input type="number" name="numb" id="numb" min="0" max="10" step="2">
-               <h2>input mes</h2>
-                 <label for="mes">adicionando o mes:</label>
-                 <input type="month" name="mes" id="mes" required autocomplete="bday-month">
-               <h2>input data</h2>
-                 <label for="dat">adicionando data:</label>
-                 <input type="date" name="dat" id="dat" required>
-               <h2>input time</h2>
-                 <label for="tim">adicionando tempo:</label>
-                 <input type="time" name="tim" id="tim">
-               <h2>enviar e limpar</h2>
-                 <input type="submit" value="enviar">
-                 <input type="reset" value="limpar">
-              </form>
-       </section>
-   </main>
-   <footer>
-         <p>&copy;GideaoAlima</p>
-   </footer>
+    </footer>
 </body>
 </html>
