@@ -1,102 +1,60 @@
 @charset "UTF-8";
 
 @font-face {
-    font-family: 'baixado';
-    src: url("../fonte/SAKURATA.ttf") format("truetype");
+    font-family: "baixado";
+    src: url('../fonte/SAKURATA.ttf') format('truetype');
 }
 
-@media All {
-   *{
-     padding: 0px;
-     margin: 0px;
-   }
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
 
-   :root{
-       --cor01:#606C38;
-       --cor02:#283618;
-       --cor03:#FEFAE0;
-       --cor04:#DDA15E;
-       --cor05:#BC6C25;
-       --baixo:'baixado';
-   }
+:root{
+    --COR01:#00487C;
+    --COR02:#4BB3FD;
+    --COR03:#3e6680;
+    --COR04:#0496FF;
+    --COR05:#027BCE;
+    --sakuta:"baixado";
+}
+
+header{
+    background-color: black;
+    text-align: center;
+}
+
+header>nav{
+    display: flex;
+    justify-content: space-between;
+   align-items: center;
+   background-color: #00487C;
+    
+}
+
+nav>menu>ul{
+    display: flex;
+
+}
+
+nav>menu>ul>li{
+    margin-right: 30px;
+}
+
+h1{
+    background-image: linear-gradient(to right,var(--COR01),var(--COR05),transparent);
+    color: white;
+    font-family: var(--sakuta);
+    font-weight: bolder;
+}
+
 
 .material-symbols-outlined {
   font-variation-settings:
   'FILL' 0,
   'wght' 400,
   'GRAD' 0,
-  'opsz' 24
-}
-
-}
-
-@media screen and (orientation:portrait){
-    header{
-        background-image: linear-gradient(to right,var(--cor01),var(--cor02));
-        color: #FEFAE0;
-        font-family:var(--baixo) ;
-        font-size: 1.6em;
-        font-weight: lighter;
-        font-style: italic;
-        font-variant: small-caps;
-        padding: 10px;
-        text-align: center;
-    }
-    nav>menu{
-        display: flex;
-        justify-content: space-between;
-        background-color: #283618;
-       
-    }
-    nav>menu>ol{
-        list-style-type: none;
-        display: flex;
-    }
-    nav>menu>ol>li{
-        margin-right: 30px;
-    }
-    nav>menu>ol>li>a{
-       text-decoration: none;
-       color: #BC6C25;
-       font-size: 20px;
-       font-family: Arial, Helvetica, sans-serif;
-       font-weight: bold;
-    }
-    nav>ul{
-        display: none;
-    }
-    nav>ul>li{
-        text-align: center;
-        padding: 5px;
-        background-color: #DDA15E;
-        color: #404824;
-        border: 1px solid #283618;
-        font-family: Arial, Helvetica, sans-serif;
-       font-weight: bolder;
-    }
-    main>h1{
-        text-align: center;
-        padding: 20px;
-        color: #283618;
-        text-transform: uppercase;
-    }
-
-    main>section{
-        background-color: #FEFAE0;
-        display: block;
-        margin: auto;
-        max-width: 506px;
-        padding: 10px;
-    }
-    main>section>ol{
-        list-style-position: inside;
-    }
-
-    main>section>h2{
-        padding: 20px;
-    }
-}
-
-@media screen and (orientation:landscape){
-    
+  'opsz' 24;
+  cursor: pointer;
 }

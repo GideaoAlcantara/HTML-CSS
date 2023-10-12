@@ -1,100 +1,66 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Primeiro Dia</title>
-  <link rel="shortcut icon" href="imagem/favicon/favicon (1).ico" type="image/x-icon">
   <link rel="stylesheet" href="estilo/dia01.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+  <title>Revisão primeiro dia</title>
 </head>
 <body>
-    <header>
-            <h1>site exemplo 01</h1>
-    </header>
-    <nav>
-       <menu>
-           <ol>
-            <li><a href="#"><span class="material-symbols-outlined" onclick="botao()">
+  <header>
+          <H1>SITE 01</H1>
+          <nav>
+            <span class="material-symbols-outlined">
               menu
-              </span></a></li>
-              <script src="script/menu.js"></script>
-           </ol>
+              </span>
+              <menu>
+                   <ul>
+                    <li>foto</li>
+                    <li>video</li>
+                    <li>contato</li>
+                   </ul>
+              </menu>
+          </nav>
+  </header>
+  <main>
+     <h1>Paragrafo e Quebra de Linha</h1><hr>
+     <section>
+         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab voluptates beatae illum ratione veritatis quod aspernatur illo blanditiis id tempora perferendis, enim explicabo consequuntur consequatur quibusdam voluptatum similique odit est.</p>
+         <!--explicação de texto-->
+         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
+             Voluptate deleniti doloribus est perspiciatis incidunt  <br>
+             eaque vero modi nisi? Cum voluptates sequi architecto aliquam, <br>
+              neque in id veritatis distinctio consequatur perferendis?</p>
+     </section>
+     <h1>imagem</h1>
+     <section>
+      <h2>imagem simpples</h2>
+      <img src="imagem/poster/images.jpg" alt="cavalo">
+      <h2>imagem URL</h2>
+      <img src="https://images.pexels.com/photos/17035575/pexels-photo-17035575/free-photo-of-floracao-florescencia-botanica-goticulas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pexel" width="300px">
+      <h2>imagem responsiva</h2>
+      <picture>
+         <source media="(max-width: 750px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+         <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
+         <img src="imagem/responsivo/imagempcg.jpg" alt="foto">
+      </picture>
+     </section>
+     <h1>iframe</h1>
+     <section>
+        <h2>iframe simples</h2>
+        <iframe src="index02.html" frameborder="1" width="200px" height="500px"></iframe>
+        <h2>ifrane com linhas</h2>
+        <ol>
+          <li><a href="index1.html" target="frame">a</a></li>
+          <li><a href="index01.html" target="frame">v</a></li>
+          <li><a href="index02.html" target="frame">n</a></li>
+        </ol>
+        <iframe src="" frameborder="1" id="frane" name="frame" width="300px"></iframe>
+     </section>
+  </main>
+  <footer>
 
-           <ol>
-            <li><a href="#">foto</a></li>
-            <li><a href="#">video</a></li>
-            <li><a href="#">contato</a></li>
-           </ol>
-       </menu>
-       <ul id="menu">
-        <li>foto</li>
-        <li>video</li>
-        <li>redes sociais</li>
-        <li>contato</li>
-       </ul>
-    </nav>
-    <main>
-       <h1>Paragrafo e Quebra</h1> <hr>
-       <section>
-           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut accusantium cupiditate provident <br>consequuntur tenetur dicta ullam saepe harum ratione delectus atque perspiciatis, suscipit molestiae praesentium officia recusandae. Quos, commodi est?
-            <!--texto exemplo anotação-->
-           </p>
-       </section>
-       <h1>Imagem</h1>
-       <section>
-           <h2>imagem simples no arquivo</h2>
-           <img src="imagem/poster/images.jpg" alt="foto" width="300px">
-           <h2>imagem simples no URL</h2>
-           <img src="https://images.pexels.com/photos/17427379/pexels-photo-17427379/free-photo-of-animal-bicho-passaro-ave.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="foto de url" width="300px">
-           <h2>imagem responsivo</h2>
-           <picture width="300px">
-               <source media="(max-width: 667px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
-               <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
-               <img src="imagem/responsivo/imagempcg.jpg" alt="responsivo">
-           </picture>
-           <h2>Favicon</h2>
-           <p>Emoge 😊</p>
-       </section>
-       <h1>Iframe</h1>
-       <section>
-          <h2>iframe comum</h2>
-          <iframe src="index01.html" frameborder="1" width="300px" height="500px"></iframe>
-          <h2>iframe navegando</h2>
-           <ol>
-            <li><a href="https://ge.globo.com/" target="frame">GloboEsporte</a></li>
-            <li><a href="https://www.globo.com/?utm_source=barraGCOM" target="frame">Globo.com</a></li>
-            <li><a href="https://ge.globo.com/cartola/?utm_source=globocom&utm_medium=header&utm_campaign=c2022_10_cartola_cartola-2022_alcance&utm_content=HEA_cartola-2022" target="frame">Cartola</a></li>
-           </ol>
-           <iframe src="" frameborder="1" name="frame" width="300px" height="500px"></iframe>
-       </section>
-       <h1>formulario</h1>
-        <section>
-          <form action="script/exemplo.js" method="get" autocomplete="on">
-            <h2>texto</h2>
-            <label for="txt">add texto :</label>
-            <input type="text" name="txt" id="txt" maxlength="10" minlength="4">
-            <h2>numero</h2>
-            <label for="num">add numero :</label>
-            <input type="number" name="num" id="num" min="2" max="10" autocomplete="cc-number">
-            <h2>mes</h2>
-            <label for="mes">add mes :</label>
-            <input type="month" name="mes" id="mes" placeholder="digiatar o mes">
-            <h2>Data</h2>
-            <label for="data">add Data :</label>
-            <input type="date" name="data" id="data" required>
-            <h2>tempo</h2>
-            <label for="temp">add horario :</label>
-            <input type="time" name="temp" id="temp">
-            <h2>enviar e apagar</h2>
-            <input type="submit" value="enviar">
-            <input type="reset" value="limpar">
-          </form>
-        </section>
-    </main>
-    <footer>
-
-    </footer>
+  </footer>
 </body>
 </html>

@@ -1,32 +1,28 @@
 @charset "UTF-8";
+ol{
+  column-count: 3;
+  column-gap: 200px;
+  column-fill: balance;
+  column-width: 200px;
+}
+ol>li{
+  text-align: justify;
+  text-decoration: solid overline blue;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px red;
+  text-indent: 30px;
+}
 
-/*-- tabela ---*/
+ol>li::after{
+  content: url("../imagem/favicon/favicon_io/favicon-16x16.png");
+}
 
-section>article>table{
-  border: 1px solid black;
-  border-collapse: collapse;
-  position: relative;
+ul>li:hover{
+   background-color: bisque;
+   color: blueviolet;
+   cursor: pointer;
 }
-caption{
-  border: 1px solid black;
-  padding: 10px;
-  vertical-align: auto;
-}
-thead>tr>th{
-  position: sticky;
-  top: 0;
-  background-color: black;
-  color: white;
-}
-.bloco1,th{
-  border: 1px solid black;
-  padding: 10px;
-  vertical-align: auto;
-  width: 100px;
-}
-tbody>tr:nth-child(2n-1){
-  background-color: darkkhaki;
-}
+
 
 
 

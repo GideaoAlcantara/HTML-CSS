@@ -2,148 +2,59 @@
 <html lang="pt-br">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Revisão dia 02</title>
+  <title>Segundo Dia</title>
   <link rel="stylesheet" href="estilo/dia02.css">
 </head>
 <body>
-  <header>
-           <h1>site exempl2</h1>
-  </header>
-  <main>
-       <section>
-         <h1>TABELA</h1>
-         <article>
-          <h2>tabela simples</h2>
-          <table>
-              <tr id="bloco01">
-                 <td class="bloco1">nome</td>
-                 <td class="bloco1">idade</td>
-                 <td class="bloco1">altura</td>
-                 <td class="bloco1">peso</td>
-              </tr>
-              <tr>
-                <td class="bloco1">josé</td>
-                <td class="bloco1">12 anos</td>
-                <td class="bloco1">1.60</td>
-                <td class="bloco1">60Kg</td>
-             </tr>
-             <tr>
-              <td class="bloco1">maria</td>
-              <td class="bloco1">14 anos</td>
-              <td class="bloco1">1.60</td>
-              <td class="bloco1">69kg</td>
-           </tr>
-          </table>
-          <h2>tabela composta</h2>
-          <table>
-            <caption>alunos</caption>
-             <thead style="background-color: black;color: aliceblue;">
-                   <tr>
-                    <th>nome</th>
-                    <th>idade</th>
-                    <th>altura</th>
-                    <th>peso</th>
-                   </tr>
-             </thead>
-             <tbody>
-                   <tr>
-                    <th>joão</th>
-                    <th>16 anos</th>
-                    <th>1.7</th>
-                    <th>72kg</th>
-                   </tr>
-                   <tr>
-                    <th>julia</th>
-                    <th>15 anos</th>
-                    <th>1.69</th>
-                    <th>65kg</th>
-                   </tr>
-             </tbody>
-             <tfoot>
-                  <tr>
-                    <th>total de alunos</th>
-                    <th colspan="3">02</th>
-                  </tr>
-             </tfoot>
-          </table>
-         </article>
-       </section>
+    <h1>semantica html</h1>
+     <h2>lista ordenada</h2>
+     <ol>
+      <li><address>nome de rua</address></li>
+      <li><em>nome italico</em></li>
+      <li><strong>nome em negrito</strong></li>
+      <li><small>texto pequeno</small></li>
+      <li><mark>texto com marcador</mark></li>
+      <li>X <sub>2</sub></li>
+      <li>X <sup>2</sup></li>
+      <li><code>texto em código</code></li>
+      <li><del>texto taxado</del></li>
+      <li><ins>texto sublinhado</ins></li>
+      <li><q>texto em citação</q></li>
+      <li><blockquote>texto em citação</blockquote></li>
+      <li><abbr title="texto">txt</abbr></li>
+     </ol>
+     <h2>lista não ordenada</h2>
+     <ul>
+      <li>primeiro</li>
+      <li>segundo</li>
+      <li>terceiro</li>
+      <li>quarto</li>
+      <li>quinto</li>
+     </ul>
+     <h2>lista definição</h2>
+     <dl>
+        <dt>titulo</dt>
+        <dd>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Error deleniti hic quaerat.
+        </dd>
+     </dl>
+     <h1>audio</h1>
+     <h2>audio simples</h2>
+     <audio src="audio/Animal Squealing .mp3" controls ></audio>
+     <h2>audio composto</h2>
+     <audio controls autoplay preload="metadata">
+        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+        <source src="audio/Animal Squealing .mp3" type="audio/mp3">
+     </audio>
+     <h1>video</h1>
+     <h2>video src</h2>
+     <video src="video/pexels-koolshooters-8976549.mp4" width="200px" controls></video>
+     <h2>video URL</h2>
+     <iframe width="200px"src="https://www.youtube.com/embed/plkI0BTZG7c?si=DcBiGgzhmiWqZb7-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
-       <section>
-        <h1>semantica html</h1>
-        <article>
-          <p>
-             <address>nome de rua</address><br>
-             <strong style="color: red;">negrito</strong><br>
-             <em>italico</em><br>
-             <mark>marcação</mark><br>
-             <code>codigo</code><br>
-             x<sub>2</sub><br>
-             <q>citação simplees</q>
-             <blockquote>citação composta de intrnet</blockquote> <br>
-             x <sup>2</sup><br>
-             <bdo dir="hipertexto">hptxt</bdo><br>
-             <small>TEXTO PEQUENO</small><br>
-             <del>taxado</del><br>
-             <ins>sublinhado</ins><br>
-             <abbr title="textosimples">txtsip</abbr>
-          </p>
-        </article>
-       </section>
-       <section>
-        <h1>LISTA</h1>
-        <article>
-          <h2>lista ordenada</h2>
-          <ol>
-            <li>ex01</li>
-            <li>ex02</li>
-            <li>ex03</li>
-            <li>ex04</li>
-          </ol>
-          <h2>lista não ordenada</h2>
-          <ul>
-            <li>ex01</li>
-            <li>ex02</li>
-            <li>ex03</li>
-            <li>ex04</li>
-          </ul>
-          <h2>lista definição</h2>
-          <dl>
-             <dt style="font-size: 2rem;">hipertexto</dt>
-             <dd>os hipeer textos são ...</dd>
-          </dl>
-        </article>
-       </section>
-       <section>
-        <h1>AUDIO</h1>
-        <article>
-          <h2>audio simplees</h2>
-          <audio src="audio/Animal Squealing .mp3" controls loop style="width: 100%;"></audio>
-          <h2>audio composto</h2>
-          <audio controls>
-               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-               <source src="audio/Animal Squealing .mp3" type="audio/mp3">
-          </audio>
-        </article>
-       </section>
-       <section>
-        <h1>VIDEO</h1>
-        <article>
-          <h2>video simples</h2>
-          <video src="video/pexels-koolshooters-8976549.mp4" controls width="300px"></video>
-          <h2>video composto</h2>
-          <video controls poster="imagem/poster/images.jpg" width="300px">
-               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-               <source src="video/pexels-koolshooters-8976549.mp4" type="video/mp4">
-          </video>
-        </article>
-       </section>
-  </main>
-  <footer>
-
-  </footer>
+     <img src="" alt="">
 </body>
 </html>
