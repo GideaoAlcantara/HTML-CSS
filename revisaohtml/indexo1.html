@@ -1,66 +1,100 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Primeiro Site</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   <link rel="stylesheet" href="estilo/dia01.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
-  <title>Revisão primeiro dia</title>
 </head>
 <body>
-  <header>
-          <H1>SITE 01</H1>
-          <nav>
-            <span class="material-symbols-outlined">
-              menu
-              </span>
-              <menu>
-                   <ul>
-                    <li>foto</li>
-                    <li>video</li>
-                    <li>contato</li>
-                   </ul>
-              </menu>
-          </nav>
-  </header>
-  <main>
-     <h1>Paragrafo e Quebra de Linha</h1><hr>
-     <section>
-         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab voluptates beatae illum ratione veritatis quod aspernatur illo blanditiis id tempora perferendis, enim explicabo consequuntur consequatur quibusdam voluptatum similique odit est.</p>
-         <!--explicação de texto-->
-         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-             Voluptate deleniti doloribus est perspiciatis incidunt  <br>
-             eaque vero modi nisi? Cum voluptates sequi architecto aliquam, <br>
-              neque in id veritatis distinctio consequatur perferendis?</p>
-     </section>
-     <h1>imagem</h1>
-     <section>
-      <h2>imagem simpples</h2>
-      <img src="imagem/poster/images.jpg" alt="cavalo">
-      <h2>imagem URL</h2>
-      <img src="https://images.pexels.com/photos/17035575/pexels-photo-17035575/free-photo-of-floracao-florescencia-botanica-goticulas.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="pexel" width="300px">
-      <h2>imagem responsiva</h2>
-      <picture>
-         <source media="(max-width: 750px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
-         <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
-         <img src="imagem/responsivo/imagempcg.jpg" alt="foto">
-      </picture>
-     </section>
-     <h1>iframe</h1>
-     <section>
-        <h2>iframe simples</h2>
-        <iframe src="index02.html" frameborder="1" width="200px" height="500px"></iframe>
-        <h2>ifrane com linhas</h2>
-        <ol>
-          <li><a href="index1.html" target="frame">a</a></li>
-          <li><a href="index01.html" target="frame">v</a></li>
-          <li><a href="index02.html" target="frame">n</a></li>
-        </ol>
-        <iframe src="" frameborder="1" id="frane" name="frame" width="300px"></iframe>
-     </section>
-  </main>
-  <footer>
+      <header>
+            <h1>site primeiro</h1>
+      </header>
+      <nav>
+          <menu>
+               <nav>
+                <span class="material-symbols-outlined">
+                  menu
+                  </span>
 
-  </footer>
+                <ol>
+                  <li><a href="#">video</a></li>
+                  <li><a href="#">imagem</a></li>
+                  <li><a href="#">contato</a></li>
+                </ol>
+               </nav>
+                <ol>
+                  <li><a href="#">video</a></li>
+                  <li><a href="#">imagem</a></li>
+                  <li><a href="#">contato</a></li>
+                </ol>
+          </menu>
+      </nav>
+      <hr>
+      <main>
+            <section>
+              <h1>parágrafos e quebras</h1>
+              <aside>
+                  <h2>texto simples</h2>
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure quo, blanditiis ipsa debitis velit numquam temporibus exercitationem alias amet corporis ex vitae excepturi tenetur laborum aut ducimus minus, fugiat quis?</p>
+                   <!--texto exemplo para fazer anotação-->
+                   <h2>texto com quebras</h2>
+                   <p>Lorem ipsum, dolor sit amet consectetur <br>
+                       adipisicing elit. Ab fuga dolores voluptas <br>
+                       maiores error iste voluptatum magni totam dolorum, <br>
+                       ipsam non sed iure natus accusamus amet. <br>
+                       Neque cum voluptatum earum.</p>
+              </aside>
+              <h1>add imagem</h1>
+              <aside>
+                   <h2>imagem simples</h2>
+                   <img src="imagem/poster/images.jpg" alt="imagem alternativa">
+                   <h2>imagem da internet</h2>
+                   <img src="https://images.pexels.com/photos/19481209/pexels-photo-19481209/free-photo-of-analogo-analogico-arquitetura-barra.jpeg" alt="img internet" width="400px">
+                   <h2>imagem flexivel</h2>
+                   <picture>
+                       <source media="(max-width: 700px)" srcset="imagem/responsivo/imagempcp.jpg" type="image/jpg">
+                       <source media="(max-width: 1000px)" srcset="imagem/responsivo/imagempcm.jpg" type="image/jpg">
+                       <img src="imagem/responsivo/imagempcg.jpg" alt="">
+                   </picture>
+              </aside>
+              <h1>iframe</h1>
+              <aside>
+                   <h2>iframe simples</h2>
+                   <ol>
+                    <li><a href="index01.html" target="frame">site03</a></li>
+                    <li><a href="index02.html" target="frame">site02</a></li>
+                    <li><a href="indexo1.html" target="frame">site01</a></li>
+                   </ol>
+
+                   <iframe name="frame" frameborder="1" width="400px" height="600px"></iframe>
+              </aside>
+              <h1>formulario parte 01</h1>
+              <aside>
+                  <form action="" method="post" autocomplete="on">
+                    <h2>texto</h2>
+                    <label for="txt">add texto: </label>
+                    <input type="text" name="" id="add texto"  required>
+                    <h2>numero</h2>
+                    <label for="num">add numero: </label>
+                    <input type="number" name="" id="num" min="2" max="8">
+                    <h2>mes</h2>
+                    <label for="mes">add mes: </label>
+                    <input type="month" name="" id="mes">
+                    <h2>tempo</h2>
+                    <label for="tempo">add tempo: </label>
+                    <input type="time" name="" id="tempo" placeholder="tempo">
+                    <input type="submit" value="enviar">
+                    <input type="reset" value="limpar">
+                  </form>
+              </aside>
+            </section>
+
+      </main>
+      <footer>
+            <p>exemplo</p>
+      </footer>
 </body>
 </html>
